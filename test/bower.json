@@ -1,5 +1,5 @@
 {
-  "name": "fe-table-2",
+  "name": "fe-table",
   "private": true,
   "dependencies": {
     "chai": "~1.8.0",
