@@ -28,3 +28,7 @@
 .grey {
   background-color: #bdc3c7;
 }
+
+.description {
+  border: solid 1px #bdc3c7;
+}
