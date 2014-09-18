@@ -5,6 +5,10 @@
   padding: 0.2em 0;
 }
 
+.red {
+  background-color: #e74c3c;
+}
+
 .green {
   background-color: #2ecc71;
 }
@@ -13,8 +17,12 @@
   background-color: #3498db;
 }
 
+.yellow {
+  background-color: #f1c40f;
+}
+
 .orange {
-  background-color: #e67e22;
+  background-color: #f39c12;
 }
 
 .grey {
