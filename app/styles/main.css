@@ -5,30 +5,33 @@
   padding: 0.2em 0;
 }
 
+.red, .green, .blue, .yellow, .orange, .grey {
+  padding-left: 2px;
+  padding-right: 2px;
+  padding-bottom: 4px;
+  border: solid 2px white;
+}
+
 .red {
-  background-color: #e74c3c;
+  background-color: #dd514c;
 }
 
 .green {
-  background-color: #2ecc71;
+  background-color: #5eb95e;
 }
 
 .blue {
-  background-color: #3498db;
+  background-color: #0e90d2;
 }
 
 .yellow {
-  background-color: #f1c40f;
+  background-color: #fad232;
 }
 
 .orange {
-  background-color: #f39c12;
+  background-color: #f37b1d;
 }
 
 .grey {
   background-color: #bdc3c7;
-}
-
-.row {
-  padding-bottom: 6px;
 }
