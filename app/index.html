@@ -602,8 +602,9 @@
 	</div>
       </div>
       <hr>
+      <!-- Elements below the table -->
       <div class="row">
-	<div class="col-sm-7">
+	<div class="col-md-7">
 	  <h2>Finite Elements</h2>
 	  <p>The table presents the primary spaces of finite elements for the discretization of the fundamental operators of vector calculus: the gradient, curl, and divergence.  A finite element space is a space of piecewise polynomial functions on a domain determined by: (1) a mesh of the domain into polyhedral cells called <em>elements</em>, (2) a finite dimensional space of polynomial functions on each element called the <em>shape functions</em>, and (3) a unisolvent set of functionals on the shape functions of each element called <em>degrees of freedom</em> (DOFs), each DOF being associated to a (generalized) face of the element, and specifying a quantity which takes a single value for all elements sharing the face.  The element diagrams depict the DOFs and their association to faces.</p>
 	  <p>The spaces \(\mathcal{P}_r^-\Lambda^k\) and \(\mathcal{P}_r\Lambda^k\) depicted on the left half of the table are the two primary families of finite element spaces for meshes of simplices, and the spaces \(\mathcal{Q}_r^-\Lambda^k\) and \(\mathcal{S}_r\Lambda^k\) on the right side are for meshes of cubes or boxes. Each is defined in any dimension \(n\ge 1\), for each value of the polynomial degree \(r\ge 1\), and each value of \(0 \leq k \leq n\).  The parameter \(k\) refers to the operator: the spaces belong to the domain of the \(k\)th exterior derivative.  Thus for \(k=0\), the spaces discretize the Sobolev space \(H^1\), the domain of the gradient operator; for \(k=1\), they discretize \(H(curl)\), the domain of the curl; for \(k=n-1\) they discretize \(H(div)\), the domain of the divergence; and for \(k=n\), they discretize \(L^2\).</p>
@@ -611,9 +612,9 @@
 	  <p>The family \(\mathcal{Q}_r^-\Lambda^k\) of cubical elements can be derived from the \(1\)-dimensional Lagrange and discontinuous Galerkin elements by a tensor product construction detailed by Arnold, Boffi, and Bonizzoni,\endnote{Numer.~Math., 2014.} but for the most part were presented individually along with the corresponding simplicial elements in the papers mentioned.  The second cubical family \(\mathcal{S}_r\Lambda^k\) is due to Arnold and Awanou.\endnote{Math.~Comp., 2013.}</p>
 	  <p>The finite element spaces on simplices have been implemented as part of the FEniCS Project\endnote{\tt http://fenicsproject.org} and may be accessed in FEniCS via {\tt FunctionSpace(mesh, "P- Lambda", r, k)} and and {\tt FunctionSpace(mesh, "P Lambda", r, k)} for \(\mathcal{P}_r^-\Lambda^k\) and \(\mathcal{P}_r\Lambda^k\), respectively.\endnote{Automated Solution of Differential Equations by the Finite Element Method, Springer 2012.}</p>
 	</div>
-	<div class="col-sm-4 col-sm-offset-1">
+	<div class="col-md-4 col-md-offset-1">
 	  <div class="row">
-	    <div class="col-sm-12">
+	    <div class="col-md-12">
 	      <h2>Legend</h2>
               <dl class="dl-horizontal">
 		<dt>Prefix <strong>'d'</strong></dt>
@@ -629,13 +630,13 @@
 	  </div>
 	  <hr>
 	  <div class="row">
-	    <div class="col-sm-12">
+	    <div class="col-md-12">
 	      <h2>References</h2>
 	    </div>
 	  </div>
 	  <hr>
 	  <div class="row">
-	    <div class="col-sm-12">
+	    <div class="col-md-12">
 	      <h2>Credits</h2>
 	      <p><button class="btn btn-success btn-lg" data-toggle="modal" data-target="#myModal">Demo element detail</button></p>
 	    </div>
