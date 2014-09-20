@@ -118,7 +118,7 @@
 	  </div>
 	  <div class="row">
 	    <div class="col-sm-3 green text-center">
-              <img src="images/elements/tetrahedron_P1.png" alt="Element placeholder" class="img-responsive">
+              <img src="images/elements/small/tetrahedron_P1.png" alt="Element placeholder" class="img-responsive">
 	      <strong>P<sub>1</sub></strong>
 	    </div>
 	    <div class="col-sm-3 red text-center">
@@ -136,7 +136,7 @@
 	  </div>
 	  <div class="row">
 	    <div class="col-sm-3 green text-center">
-              <img src="images/elements/tetrahedron_P2.png" alt="Element placeholder" class="img-responsive">
+              <img src="images/elements/small/tetrahedron_P2.png" alt="Element placeholder" class="img-responsive">
 	      <strong>P<sub>2</sub></strong>
 	    </div>
 	    <div class="col-sm-3 red text-center">
@@ -154,7 +154,7 @@
 	  </div>
 	  <div class="row">
 	    <div class="col-sm-3 green text-center">
-              <img src="images/elements/tetrahedron_P3.png" alt="Element placeholder" class="img-responsive">
+              <img src="images/elements/small/tetrahedron_P3.png" alt="Element placeholder" class="img-responsive">
 	      <strong>P<sub>3</sub></strong>
 	    </div>
 	    <div class="col-sm-3 red text-center">
@@ -621,8 +621,49 @@
 	</div>
 	<div class="col-sm-4">
 	  <h2>Credits</h2>
+	  <button class="btn btn-success btn-lg" data-toggle="modal" data-target="#myModal">
+	    Demo element detail
+	  </button>
 	</div>
       </div>
+
+      <!-- Demo element detail -->
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+	  <div class="modal-content green">
+	    <div class="modal-body">
+              <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+	      <div class="row">
+		<div class="col-sm-11">
+		  <img src="images/elements/large/tetrahedron_P1.png" alt="Element placeholder" class="img-responsive">
+		</div>
+		<div class="col-sm-1">
+		  <strong>4<strong>
+		</div>
+	      </div>
+	      <div class="row">
+		<div class="col-sm-6">
+		  <strong>P<sub>1</sub></strong>
+		</div>
+		<div class="col-sm-6">
+		  <p>Some mathjax</p>
+		</div>
+	      </div>
+	      <div class="row">
+		<div class="col-sm-12">
+		  <p>Some more mathjax</p>
+		</div>
+	      </div>
+	      <div class="row">
+		<div class="col-sm-12">
+		  <p><tt>("P", tetrahedron, 1)</tt></p>
+		</div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+      </div>
+
     </div>
 
     <!-- build:js(.) scripts/vendor.js -->

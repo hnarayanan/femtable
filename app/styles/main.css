@@ -10,6 +10,7 @@
   padding-right: 2px;
   padding-bottom: 4px;
   border: solid 2px white;
+  border-radius: 4px;
 }
 
 .red {
@@ -34,4 +35,8 @@
 
 .grey {
   background-color: #bdc3c7;
+}
+
+.modal-content {
+  font-size: 200%;
 }
