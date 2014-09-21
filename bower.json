@@ -2,6 +2,6 @@
   "name": "fe-table",
   "private": true,
   "dependencies": {
-    "bootstrap": "~3.2.0"
+    "bootswatch-dist": "3.2.0-yeti"
   }
 }
