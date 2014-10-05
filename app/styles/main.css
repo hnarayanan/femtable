@@ -42,6 +42,14 @@
 }
 
 code {
-   color: black;
-   background-color: inherit;
+  color: black;
+  background-color: inherit;
+}
+
+h1 {
+  font-weight: 900;
+}
+
+.divider {
+  margin-bottom: 8px;
 }
