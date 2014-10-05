@@ -51,5 +51,7 @@ h1 {
 }
 
 .divider {
-  margin-bottom: 8px;
+  margin-bottom: 4px;
+  padding-bottom: 4px;
+  border-bottom: solid 1px #ddd;
 }
