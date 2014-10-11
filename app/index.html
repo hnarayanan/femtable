@@ -11,7 +11,7 @@
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
-    <link rel="stylesheet" href="bower_components/bootswatch-dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="bower_components/pure/pure.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
@@ -24,784 +24,1153 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <div class="container">
-      <div class="page-header">
-        <h1 id="responsive-title">Periodic Table of the Finite Elements</h1>
+    <div class="pure-g">
+      <div class="pure-u-1-24">
+	<!-- Blank -->
       </div>
-      <div class="row">
-        <!-- Block 1 -->
-        <div class="col-xs-3">
-	  <div class="col-xs-11">
-	    <div class="row">
-              <h4 class="hidden-xs">The \(\mathcal P^-_r\Lambda^k\) family</h4>
+      <div class="pure-u-22-24">
+    <div class="pure-g">
+      <div class="pure-u-1-24" style="background-color:#eee;">
+	<p class="the_k">[n & r<br> go here]</p>
+      </div>
+      <div class="pure-u-5-24">
+	<div class="pure-g">
+	  <div class="pure-u-1-4">
+	    <div class="the_k">
+	      k = 0
 	    </div>
-          <div class="row">
-            <div class="col-xs-6 divider">
-              <div class="row">
-                <div class="col-xs-6 green text-center">
-                  <img src="images/small/P1_interval.png" alt="Element placeholder" class="img-responsive hidden-xs">
-                  <strong>P<sub>1</sub></strong>
-                </div>
-                <div class="col-xs-6 blue text-center">
-                  <img src="images/small/dP0_interval.png" alt="Element placeholder" class="img-responsive hidden-xs">
-                  <strong>dP<sub>0</sub></strong>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-xs-6 green text-center">
-                  <img src="images/small/P2_interval.png" alt="Element placeholder" class="img-responsive hidden-xs">
-                  <strong>P<sub>2</sub></strong>
-                </div>
-                <div class="col-xs-6 blue text-center">
-                  <img src="images/small/dP1_interval.png" alt="Element placeholder" class="img-responsive hidden-xs">
-                  <strong>dP<sub>1</sub></strong>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-xs-6 green text-center">
-                  <img src="images/small/P3_interval.png" alt="Element placeholder" class="img-responsive hidden-xs">
-                  <strong>P<sub>3</sub></strong>
-                </div>
-                <div class="col-xs-6 blue text-center">
-                  <img src="images/small/dP2_interval.png" alt="Element placeholder" class="img-responsive hidden-xs">
-                  <strong>dP<sub>2</sub></strong>
-                </div>
-              </div>
-            </div>
-            <div class="col-xs-6 hidden-sm hidden-xs">
-	      <!-- Blank -->
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-xs-9 divider">
-              <div class="row">
-                <div class="col-xs-4 green text-center">
-                  <img src="images/small/P1_triangle.png" alt="Element placeholder" class="img-responsive hidden-xs">
-                  <strong>P<sub>1</sub></strong>
-                </div>
-                <div class="col-xs-4 orange text-center">
-                  <img src="images/small/placeholder-square.png" alt="Element placeholder" class="img-responsive hidden-xs">
-                  <strong>RT<sub>1</sub></strong>
-                </div>
-                <div class="col-xs-4 blue text-center">
-                  <img src="images/small/dP0_triangle.png" alt="Element placeholder" class="img-responsive hidden-xs">
-                  <strong>dP<sub>0</sub></strong>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-xs-4 green text-center">
-                  <img src="images/small/P2_triangle.png" alt="Element placeholder" class="img-responsive hidden-xs">
-                  <strong>P<sub>2</sub></strong>
-                </div>
-                <div class="col-xs-4 orange text-center">
-                  <img src="images/small/placeholder-square.png" alt="Element placeholder" class="img-responsive hidden-xs">
-                  <strong>RT<sub>2</sub></strong>
-                </div>
-                <div class="col-xs-4 blue text-center">
-                  <img src="images/small/dP1_triangle.png" alt="Element placeholder" class="img-responsive hidden-xs">
-                  <strong>dP<sub>1</sub></strong>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-xs-4 green text-center">
-                  <img src="images/small/P3_triangle.png" alt="Element placeholder" class="img-responsive hidden-xs">
-                  <strong>P<sub>3</sub></strong>
-                </div>
-                <div class="col-xs-4 orange text-center">
-                  <img src="images/small/placeholder-square.png" alt="Element placeholder" class="img-responsive hidden-xs">
-                  <strong>RT<sub>3</sub></strong>
-                </div>
-                <div class="col-xs-4 blue text-center">
-                  <img src="images/small/dP2_triangle.png" alt="Element placeholder" class="img-responsive hidden-xs">
-                  <strong>dP<sub>2</sub></strong>
-                </div>
-              </div>
-            </div>
-            <div class="col-xs-3">
-              <!-- Blank -->
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-xs-3 green text-center" data-toggle="modal" data-target="#P1_tetrahedron">
-              <img src="images/small/P1_tetrahedron.png" alt="Element placeholder" class="img-responsive hidden-xs">
-              <strong>P<sub>1</sub></strong>
-            </div>
-            <div class="col-xs-3 red text-center">
-              <img src="images/small/N1e1_tetrahedron.png" alt="Element placeholder" class="img-responsive hidden-xs">
-              <strong>N1<sup>e</sup><sub>1</sub></strong>
-            </div>
-            <div class="col-xs-3 yellow text-center">
-              <img src="images/small/N1f1_tetrahedron.png" alt="Element placeholder" class="img-responsive hidden-xs">
-              <strong>N1<sup>f</sup><sub>1</sub></strong>
-            </div>
-            <div class="col-xs-3 blue text-center">
-              <img src="images/small/dP0_tetrahedron.png" alt="Element placeholder" class="img-responsive hidden-xs">
-              <strong>dP<sub>0</sub></strong>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-xs-3 green text-center" data-toggle="modal" data-target="#P2_tetrahedron">
-              <img src="images/small/P2_tetrahedron.png" alt="Element placeholder" class="img-responsive hidden-xs">
-              <strong>P<sub>2</sub></strong>
-            </div>
-            <div class="col-xs-3 red text-center">
-              <img src="images/small/N1e2_tetrahedron.png" alt="Element placeholder" class="img-responsive hidden-xs">
-              <strong>N1<sup>e</sup><sub>2</sub></strong>
-            </div>
-            <div class="col-xs-3 yellow text-center">
-              <img src="images/small/N1f2_tetrahedron.png" alt="Element placeholder" class="img-responsive hidden-xs">
-              <strong>N1<sup>f</sup><sub>2</sub></strong>
-            </div>
-            <div class="col-xs-3 blue text-center">
-              <img src="images/small/dP1_tetrahedron.png" alt="Element placeholder" class="img-responsive hidden-xs">
-              <strong>dP<sub>1</sub></strong>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-xs-3 green text-center" data-toggle="modal" data-target="#P3_tetrahedron">
-              <img src="images/small/P3_tetrahedron.png" alt="Element placeholder" class="img-responsive hidden-xs">
-              <strong>P<sub>3</sub></strong>
-            </div>
-            <div class="col-xs-3 red text-center">
-              <img src="images/small/N1e3_tetrahedron.png" alt="Element placeholder" class="img-responsive hidden-xs">
-              <strong>N1<sup>e</sup><sub>3</sub></strong>
-            </div>
-            <div class="col-xs-3 yellow text-center">
-              <img src="images/small/N1f3_tetrahedron.png" alt="Element placeholder" class="img-responsive hidden-xs">
-              <strong>N1<sup>f</sup><sub>3</sub></strong>
-            </div>
-            <div class="col-xs-3 blue text-center">
-              <img src="images/small/dP2_tetrahedron.png" alt="Element placeholder" class="img-responsive hidden-xs">
-              <strong>dP<sub>2</sub></strong>
-            </div>
-          </div>
 	  </div>
-        </div>
-        <!-- Block 2 -->
-        <div class="col-xs-3">
-	  <div class="col-xs-11">
-	    <div class="row">
-              <h4 class="hidden-xs">The \(\mathcal P_r\Lambda^k\) family</h4>
+	  <div class="pure-u-1-4">
+	    <div class="the_k">
+	      k = 1
 	    </div>
-          <div class="row">
-            <div class="col-xs-6 divider">
-              <div class="row">
-                <div class="col-xs-6 green text-center">
-                  <img src="images/small/P1_interval.png" alt="Element placeholder" class="img-responsive hidden-xs">
-                  <strong>P<sub>1</sub></strong>
-                </div>
-                <div class="col-xs-6 blue text-center">
-                  <img src="images/small/dP1_interval.png" alt="Element placeholder" class="img-responsive hidden-xs">
-                  <strong>dP<sub>1</sub></strong>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-xs-6 green text-center">
-                  <img src="images/small/P2_interval.png" alt="Element placeholder" class="img-responsive hidden-xs">
-                  <strong>P<sub>2</sub></strong>
-                </div>
-                <div class="col-xs-6 blue text-center">
-                  <img src="images/small/dP2_interval.png" alt="Element placeholder" class="img-responsive hidden-xs">
-                  <strong>dP<sub>2</sub></strong>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-xs-6 green text-center">
-                  <img src="images/small/P3_interval.png" alt="Element placeholder" class="img-responsive hidden-xs">
-                  <strong>P<sub>3</sub></strong>
-                </div>
-                <div class="col-xs-6 blue text-center">
-                  <img src="images/small/dP3_interval.png" alt="Element placeholder" class="img-responsive hidden-xs">
-                  <strong>dP<sub>3</sub></strong>
-                </div>
-              </div>
-            </div>
-            <div class="col-xs-6 hidden-sm hidden-xs">
-	      <!-- Blank -->
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-xs-9 divider">
-              <div class="row">
-                <div class="col-xs-4 green text-center">
-                  <img src="images/small/P1_triangle.png" alt="Element placeholder" class="img-responsive hidden-xs">
-                  <strong>P<sub>1</sub></strong>
-                </div>
-                <div class="col-xs-4 orange text-center">
-                  <img src="images/small/placeholder-square.png" alt="Element placeholder" class="img-responsive hidden-xs">
-                  <strong>BDM<sub>1</sub></strong>
-                </div>
-                <div class="col-xs-4 blue text-center">
-                  <img src="images/small/dP1_triangle.png" alt="Element placeholder" class="img-responsive hidden-xs">
-                  <strong>dP<sub>1</sub></strong>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-xs-4 green text-center">
-                  <img src="images/small/P2_triangle.png" alt="Element placeholder" class="img-responsive hidden-xs">
-                  <strong>P<sub>2</sub></strong>
-                </div>
-                <div class="col-xs-4 orange text-center">
-                  <img src="images/small/placeholder-square.png" alt="Element placeholder" class="img-responsive hidden-xs">
-                  <strong>BDM<sub>2</sub></strong>
-                </div>
-                <div class="col-xs-4 blue text-center">
-                  <img src="images/small/dP2_triangle.png" alt="Element placeholder" class="img-responsive hidden-xs">
-                  <strong>dP<sub>2</sub></strong>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-xs-4 green text-center">
-                  <img src="images/small/P3_triangle.png" alt="Element placeholder" class="img-responsive hidden-xs">
-                  <strong>P<sub>3</sub></strong>
-                </div>
-                <div class="col-xs-4 orange text-center">
-                  <img src="images/small/placeholder-square.png" alt="Element placeholder" class="img-responsive hidden-xs">
-                  <strong>BDM<sub>3</sub></strong>
-                </div>
-                <div class="col-xs-4 blue text-center">
-                  <img src="images/small/dP3_triangle.png" alt="Element placeholder" class="img-responsive hidden-xs">
-                  <strong>dP<sub>3</sub></strong>
-                </div>
-              </div>
-            </div>
-            <div class="col-xs-3">
-              <!-- Blank -->
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-xs-3 green text-center" data-toggle="modal" data-target="#P1_tetrahedron">
-              <img src="images/small/P1_tetrahedron.png" alt="Element placeholder" class="img-responsive hidden-xs">
-              <strong>P<sub>1</sub></strong>
-            </div>
-            <div class="col-xs-3 red text-center">
-              <img src="images/small/N2e1_tetrahedron.png" alt="Element placeholder" class="img-responsive hidden-xs">
-              <strong>N2<sup>e</sup><sub>1</sub></strong>
-            </div>
-            <div class="col-xs-3 yellow text-center">
-              <img src="images/small/N2f1_tetrahedron.png" alt="Element placeholder" class="img-responsive hidden-xs">
-              <strong>N2<sup>f</sup><sub>1</sub></strong>
-            </div>
-            <div class="col-xs-3 blue text-center">
-              <img src="images/small/dP1_tetrahedron.png" alt="Element placeholder" class="img-responsive hidden-xs">
-              <strong>dP<sub>1</sub></strong>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-xs-3 green text-center" data-toggle="modal" data-target="#P2_tetrahedron">
-              <img src="images/small/P2_tetrahedron.png" alt="Element placeholder" class="img-responsive hidden-xs">
-              <strong>P<sub>2</sub></strong>
-            </div>
-            <div class="col-xs-3 red text-center">
-              <img src="images/small/N2e2_tetrahedron.png" alt="Element placeholder" class="img-responsive hidden-xs">
-              <strong>N2<sup>e</sup><sub>2</sub></strong>
-            </div>
-            <div class="col-xs-3 yellow text-center">
-              <img src="images/small/N2f2_tetrahedron.png" alt="Element placeholder" class="img-responsive hidden-xs">
-              <strong>N2<sup>f</sup><sub>2</sub></strong>
-            </div>
-            <div class="col-xs-3 blue text-center">
-              <img src="images/small/dP2_tetrahedron.png" alt="Element placeholder" class="img-responsive hidden-xs">
-              <strong>dP<sub>2</sub></strong>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-xs-3 green text-center" data-toggle="modal" data-target="#P3_tetrahedron">
-              <img src="images/small/P3_tetrahedron.png" alt="Element placeholder" class="img-responsive hidden-xs">
-              <strong>P<sub>3</sub></strong>
-            </div>
-            <div class="col-xs-3 red text-center">
-              <img src="images/small/N2e3_tetrahedron.png" alt="Element placeholder" class="img-responsive hidden-xs">
-              <strong>N2<sup>e</sup><sub>3</sub></strong>
-            </div>
-            <div class="col-xs-3 yellow text-center">
-              <img src="images/small/N2f3_tetrahedron.png" alt="Element placeholder" class="img-responsive hidden-xs">
-              <strong>N2<sup>f</sup><sub>3</sub></strong>
-            </div>
-            <div class="col-xs-3 blue text-center">
-              <img src="images/small/dP3_tetrahedron.png" alt="Element placeholder" class="img-responsive hidden-xs">
-              <strong>dP<sub>3</sub></strong>
-            </div>
-          </div>
 	  </div>
-        </div>
-        <!-- Block 3 -->
-        <div class="col-xs-3">
-	  <div class="col-xs-11">
-	    <div class="row">
-              <h4 class="hidden-xs">The \(\mathcal Q^-_r\Lambda^k\) family</h4>
+	  <div class="pure-u-1-4">
+	    <div class="the_k">
+	      k = 2
 	    </div>
-          <div class="row">
-            <div class="col-xs-6 divider">
-              <div class="row">
-                <div class="col-xs-6 green text-center">
-                  <img src="images/small/Q1_interval.png" alt="Element placeholder" class="img-responsive hidden-xs">
-                  <strong>Q<sub>1</sub></strong>
-                </div>
-                <div class="col-xs-6 blue text-center">
-                  <img src="images/small/dQ0_interval.png" alt="Element placeholder" class="img-responsive hidden-xs">
-                  <strong>dQ<sub>0</sub></strong>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-xs-6 green text-center">
-                  <img src="images/small/Q2_interval.png" alt="Element placeholder" class="img-responsive hidden-xs">
-                  <strong>Q<sub>2</sub></strong>
-                </div>
-                <div class="col-xs-6 blue text-center">
-                  <img src="images/small/dQ1_interval.png" alt="Element placeholder" class="img-responsive hidden-xs">
-                  <strong>dQ<sub>1</sub></strong>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-xs-6 green text-center">
-                  <img src="images/small/Q3_interval.png" alt="Element placeholder" class="img-responsive hidden-xs">
-                  <strong>Q<sub>3</sub></strong>
-                </div>
-                <div class="col-xs-6 blue text-center">
-                  <img src="images/small/dQ2_interval.png" alt="Element placeholder" class="img-responsive hidden-xs">
-                  <strong>dQ<sub>2</sub></strong>
-                </div>
-              </div>
-            </div>
-            <div class="col-xs-6 hidden-sm hidden-xs">
-	      <!-- Blank -->
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-xs-9 divider">
-              <div class="row">
-                <div class="col-xs-4 green text-center">
-                  <img src="images/small/Q1_quadrilateral.png" alt="Element placeholder" class="img-responsive hidden-xs">
-                  <strong>Q<sub>1</sub></strong>
-                </div>
-                <div class="col-xs-4 orange text-center">
-                  <img src="images/small/placeholder-square.png" alt="Element placeholder" class="img-responsive hidden-xs">
-                  <strong>RTc<sub>1</sub></strong>
-                </div>
-                <div class="col-xs-4 blue text-center">
-                  <img src="images/small/dQ0_quadrilateral.png" alt="Element placeholder" class="img-responsive hidden-xs">
-                  <strong>dQ<sub>0</sub></strong>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-xs-4 green text-center">
-                  <img src="images/small/Q2_quadrilateral.png" alt="Element placeholder" class="img-responsive hidden-xs">
-                  <strong>Q<sub>2</sub></strong>
-                </div>
-                <div class="col-xs-4 orange text-center">
-                  <img src="images/small/placeholder-square.png" alt="Element placeholder" class="img-responsive hidden-xs">
-                  <strong>RTc<sub>2</sub></strong>
-                </div>
-                <div class="col-xs-4 blue text-center">
-                  <img src="images/small/dQ1_quadrilateral.png" alt="Element placeholder" class="img-responsive hidden-xs">
-                  <strong>dQ<sub>1</sub></strong>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-xs-4 green text-center">
-                  <img src="images/small/Q3_quadrilateral.png" alt="Element placeholder" class="img-responsive hidden-xs">
-                  <strong>Q<sub>3</sub></strong>
-                </div>
-                <div class="col-xs-4 orange text-center">
-                  <img src="images/small/placeholder-square.png" alt="Element placeholder" class="img-responsive hidden-xs">
-                  <strong>RTc<sub>3</sub></strong>
-                </div>
-                <div class="col-xs-4 blue text-center">
-                  <img src="images/small/dQ2_quadrilateral.png" alt="Element placeholder" class="img-responsive hidden-xs">
-                  <strong>dQ<sub>2</sub></strong>
-                </div>
-              </div>
-            </div>
-            <div class="col-xs-3">
-              <!-- Blank -->
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-xs-3 green text-center">
-              <img src="images/small/Q1_hexahedron.png" alt="Element placeholder" class="img-responsive hidden-xs">
-              <strong>Q<sub>1</sub></strong>
-            </div>
-            <div class="col-xs-3 red text-center">
-              <img src="images/small/Nce1_hexahedron.png" alt="Element placeholder" class="img-responsive hidden-xs">
-              <strong>Nc<sup>e</sup><sub>1</sub></strong>
-            </div>
-            <div class="col-xs-3 yellow text-center">
-              <img src="images/small/Ncf1_hexahedron.png" alt="Element placeholder" class="img-responsive hidden-xs">
-              <strong>Nc<sup>f</sup><sub>1</sub></strong>
-            </div>
-            <div class="col-xs-3 blue text-center">
-              <img src="images/small/dQ0_hexahedron.png" alt="Element placeholder" class="img-responsive hidden-xs">
-              <strong>dQ<sub>0</sub></strong>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-xs-3 green text-center">
-              <img src="images/small/Q2_hexahedron.png" alt="Element placeholder" class="img-responsive hidden-xs">
-              <strong>Q<sub>2</sub></strong>
-            </div>
-            <div class="col-xs-3 red text-center">
-              <img src="images/small/Nce2_hexahedron.png" alt="Element placeholder" class="img-responsive hidden-xs">
-              <strong>Nc<sup>e</sup><sub>2</sub></strong>
-            </div>
-            <div class="col-xs-3 yellow text-center">
-              <img src="images/small/Ncf2_hexahedron.png" alt="Element placeholder" class="img-responsive hidden-xs">
-              <strong>Nc<sup>f</sup><sub>2</sub></strong>
-            </div>
-            <div class="col-xs-3 blue text-center">
-              <img src="images/small/dQ1_hexahedron.png" alt="Element placeholder" class="img-responsive hidden-xs">
-              <strong>dQ<sub>1</sub></strong>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-xs-3 green text-center">
-              <img src="images/small/Q3_hexahedron.png" alt="Element placeholder" class="img-responsive hidden-xs">
-              <strong>Q<sub>3</sub></strong>
-            </div>
-            <div class="col-xs-3 red text-center">
-              <img src="images/small/Nce3_hexahedron.png" alt="Element placeholder" class="img-responsive hidden-xs">
-              <strong>Nc<sup>e</sup><sub>3</sub></strong>
-            </div>
-            <div class="col-xs-3 yellow text-center">
-              <img src="images/small/Ncf3_hexahedron.png" alt="Element placeholder" class="img-responsive hidden-xs">
-              <strong>Nc<sup>f</sup><sub>3</sub></strong>
-            </div>
-            <div class="col-xs-3 blue text-center">
-              <img src="images/small/dQ2_hexahedron.png" alt="Element placeholder" class="img-responsive hidden-xs">
-              <strong>dQ<sub>2</sub></strong>
-            </div>
-          </div>
 	  </div>
-        </div>
-        <!-- Block 4 -->
-        <div class="col-xs-3">
-	  <div class="col-xs-11">
-	    <div class="row">
-              <h4 class="hidden-xs">The \(\mathcal S_r\Lambda^k\) family</h4>
+	  <div class="pure-u-1-4">
+	    <div class="the_k">
+	      k = 3
 	    </div>
-          <div class="row">
-            <div class="col-xs-6 divider">
-              <div class="row">
-                <div class="col-xs-6 green text-center">
-                  <img src="images/small/S1_interval.png" alt="Element placeholder" class="img-responsive hidden-xs">
-                  <strong>S<sub>1</sub></strong>
-                </div>
-                <div class="col-xs-6 blue text-center">
-                  <img src="images/small/dPc1_interval.png" alt="Element placeholder" class="img-responsive hidden-xs">
-                  <strong>dPc<sub>1</sub></strong>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-xs-6 green text-center">
-                  <img src="images/small/S2_interval.png" alt="Element placeholder" class="img-responsive hidden-xs">
-                  <strong>S<sub>2</sub></strong>
-                </div>
-                <div class="col-xs-6 blue text-center">
-                  <img src="images/small/dPc2_interval.png" alt="Element placeholder" class="img-responsive hidden-xs">
-                  <strong>dPc<sub>2</sub></strong>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-xs-6 green text-center">
-                  <img src="images/small/S3_interval.png" alt="Element placeholder" class="img-responsive hidden-xs">
-                  <strong>S<sub>3</sub></strong>
-                </div>
-                <div class="col-xs-6 blue text-center">
-                  <img src="images/small/dPc3_interval.png" alt="Element placeholder" class="img-responsive hidden-xs">
-                  <strong>dPc<sub>3</sub></strong>
-                </div>
-              </div>
-            </div>
-            <div class="col-xs-6 hidden-sm hidden-xs">
-	      <!-- Blank -->
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-xs-9 divider">
-              <div class="row">
-                <div class="col-xs-4 green text-center">
-                  <img src="images/small/S1_quadrilateral.png" alt="Element placeholder" class="img-responsive hidden-xs">
-                  <strong>S<sub>1</sub></strong>
-                </div>
-                <div class="col-xs-4 orange text-center">
-                  <img src="images/small/placeholder-square.png" alt="Element placeholder" class="img-responsive hidden-xs">
-                  <strong>BDMc<sub>1</sub></strong>
-                </div>
-                <div class="col-xs-4 blue text-center">
-                  <img src="images/small/dPc1_quadrilateral.png" alt="Element placeholder" class="img-responsive hidden-xs">
-                  <strong>dPc<sub>1</sub></strong>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-xs-4 green text-center">
-                  <img src="images/small/S2_quadrilateral.png" alt="Element placeholder" class="img-responsive hidden-xs">
-                  <strong>S<sub>2</sub></strong>
-                </div>
-                <div class="col-xs-4 orange text-center">
-                  <img src="images/small/placeholder-square.png" alt="Element placeholder" class="img-responsive hidden-xs">
-                  <strong>BDMc<sub>2</sub></strong>
-                </div>
-                <div class="col-xs-4 blue text-center">
-                  <img src="images/small/dPc2_quadrilateral.png" alt="Element placeholder" class="img-responsive hidden-xs">
-                  <strong>dPc<sub>2</sub></strong>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-xs-4 green text-center">
-                  <img src="images/small/S3_quadrilateral.png" alt="Element placeholder" class="img-responsive hidden-xs">
-                  <strong>S<sub>3</sub></strong>
-                </div>
-                <div class="col-xs-4 orange text-center">
-                  <img src="images/small/placeholder-square.png" alt="Element placeholder" class="img-responsive hidden-xs">
-                  <strong>BDMc<sub>3</sub></strong>
-                </div>
-                <div class="col-xs-4 blue text-center">
-                  <img src="images/small/dPc3_quadrilateral.png" alt="Element placeholder" class="img-responsive hidden-xs">
-                  <strong>dPc<sub>3</sub></strong>
-                </div>
-              </div>
-            </div>
-            <div class="col-xs-3">
-              <!-- Blank -->
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-xs-3 green text-center">
-              <img src="images/small/S1_hexahedron.png" alt="Element placeholder" class="img-responsive hidden-xs">
-              <strong>S<sub>1</sub></strong>
-            </div>
-            <div class="col-xs-3 red text-center">
-              <img src="images/small/AAe1_hexahedron.png" alt="Element placeholder" class="img-responsive hidden-xs">
-              <strong>AA<sup>e</sup><sub>1</sub></strong>
-            </div>
-            <div class="col-xs-3 yellow text-center">
-              <img src="images/small/AAf1_hexahedron.png" alt="Element placeholder" class="img-responsive hidden-xs">
-              <strong>AA<sup>f</sup><sub>1</sub></strong>
-            </div>
-            <div class="col-xs-3 blue text-center">
-              <img src="images/small/dPc1_hexahedron.png" alt="Element placeholder" class="img-responsive hidden-xs">
-              <strong>dPc<sub>1</sub></strong>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-xs-3 green text-center">
-              <img src="images/small/S2_hexahedron.png" alt="Element placeholder" class="img-responsive hidden-xs">
-              <strong>S<sub>2</sub></strong>
-            </div>
-            <div class="col-xs-3 red text-center">
-              <img src="images/small/AAe2_hexahedron.png" alt="Element placeholder" class="img-responsive hidden-xs">
-              <strong>AA<sup>e</sup><sub>2</sub></strong>
-            </div>
-            <div class="col-xs-3 yellow text-center">
-              <img src="images/small/AAf2_hexahedron.png" alt="Element placeholder" class="img-responsive hidden-xs">
-              <strong>AA<sup>f</sup><sub>2</sub></strong>
-            </div>
-            <div class="col-xs-3 blue text-center">
-              <img src="images/small/dPc2_hexahedron.png" alt="Element placeholder" class="img-responsive hidden-xs">
-              <strong>dPc<sub>2</sub></strong>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-xs-3 green text-center">
-              <img src="images/small/S3_hexahedron.png" alt="Element placeholder" class="img-responsive hidden-xs">
-              <strong>S<sub>3</sub></strong>
-            </div>
-            <div class="col-xs-3 red text-center">
-              <img src="images/small/AAe3_hexahedron.png" alt="Element placeholder" class="img-responsive hidden-xs">
-              <strong>AA<sup>e</sup><sub>3</sub></strong>
-            </div>
-            <div class="col-xs-3 yellow text-center">
-              <img src="images/small/AAf3_hexahedron.png" alt="Element placeholder" class="img-responsive hidden-xs">
-              <strong>AA<sup>f</sup><sub>3</sub></strong>
-            </div>
-            <div class="col-xs-3 blue text-center">
-              <img src="images/small/placeholder.png" alt="Element placeholder" class="img-responsive hidden-xs">
-              <strong>dPc<sub>3</sub></strong>
-            </div>
-          </div>
-        </div>
+	  </div>
+	</div>
+	<hr>
+	<div class="pure-g">
+	  <div class="pure-u-1-4">
+	    <div class="element green">
+	      <img class="pure-img" src="P3_interval.png">
+	      <div class="label">
+		\( \mathrm{BDM}^\mathrm{f}_{1} \)
+	      </div>
+	    </div>
+	  </div>
+	  <div class="pure-u-1-4">
+	    <div class="element blue">
+	      <img class="pure-img" src="P3_interval.png">
+	      <div class="label">
+		\( \mathrm{BDM}^\mathrm{f}_{1} \)
+	      </div>
+	    </div>
+	  </div>
+	  <div class="pure-u-1-4">
+	  </div>
+	  <div class="pure-u-1-4">
+	  </div>
+	</div>
+	<div class="pure-g">
+	  <div class="pure-u-1-4">
+	    <div class="element green">
+	      <img class="pure-img" src="P3_interval.png">
+	      <div class="label">
+		\( \mathrm{BDM}^\mathrm{f}_{1} \)
+	      </div>
+	    </div>
+	  </div>
+	  <div class="pure-u-1-4">
+	    <div class="element blue">
+	      <img class="pure-img" src="P3_interval.png">
+	      <div class="label">
+		\( \mathrm{BDM}^\mathrm{f}_{1} \)
+	      </div>
+	    </div>
+	  </div>
+	  <div class="pure-u-1-4">
+	  </div>
+	  <div class="pure-u-1-4">
+	  </div>
+	</div>
+	<div class="pure-g">
+	  <div class="pure-u-1-4">
+	    <div class="element green">
+	      <img class="pure-img" src="P3_interval.png">
+	      <div class="label">
+		\( \mathrm{BDM}^\mathrm{f}_{1} \)
+	      </div>
+	    </div>
+	  </div>
+	  <div class="pure-u-1-4">
+	    <div class="element blue">
+	      <img class="pure-img" src="P3_interval.png">
+	      <div class="label">
+		\( \mathrm{BDM}^\mathrm{f}_{1} \)
+	      </div>
+	    </div>
+	  </div>
+	  <div class="pure-u-1-4">
+	  </div>
+	  <div class="pure-u-1-4">
+	  </div>
+	</div>
+	<hr>
+	<div class="pure-g">
+	  <div class="pure-u-1-4">
+	    <div class="element green">
+	      <img class="pure-img" src="Q3_quadrilateral.png">
+	      <div class="label">
+		\( \mathrm{BDM}^\mathrm{f}_{1} \)
+	      </div>
+	    </div>
+	  </div>
+	  <div class="pure-u-1-4">
+	    <div class="element orange">
+	      <img class="pure-img" src="Q3_quadrilateral.png">
+	      <div class="label">
+		\( \mathrm{BDM}^\mathrm{f}_{1} \)
+	      </div>
+	    </div>
+	  </div>
+	  <div class="pure-u-1-4">
+	    <div class="element blue">
+	      <img class="pure-img" src="Q3_quadrilateral.png">
+	      <div class="label">
+		\( \mathrm{BDM}^\mathrm{f}_{1} \)
+	      </div>
+	    </div>
+	  </div>
+	  <div class="pure-u-1-4">
+	  </div>
+	</div>
+	<div class="pure-g">
+	  <div class="pure-u-1-4">
+	    <div class="element green">
+	      <img class="pure-img" src="Q3_quadrilateral.png">
+	      <div class="label">
+		\( \mathrm{BDM}^\mathrm{f}_{1} \)
+	      </div>
+	    </div>
+	  </div>
+	  <div class="pure-u-1-4">
+	    <div class="element orange">
+	      <img class="pure-img" src="Q3_quadrilateral.png">
+	      <div class="label">
+		\( \mathrm{BDM}^\mathrm{f}_{1} \)
+	      </div>
+	    </div>
+	  </div>
+	  <div class="pure-u-1-4">
+	    <div class="element blue">
+	      <img class="pure-img" src="Q3_quadrilateral.png">
+	      <div class="label">
+		\( \mathrm{BDM}^\mathrm{f}_{1} \)
+	      </div>
+	    </div>
+	  </div>
+	  <div class="pure-u-1-4">
+	  </div>
+	</div>
+	<div class="pure-g">
+	  <div class="pure-u-1-4">
+	    <div class="element green">
+	      <img class="pure-img" src="Q3_quadrilateral.png">
+	      <div class="label">
+		\( \mathrm{BDM}^\mathrm{f}_{1} \)
+	      </div>
+	    </div>
+	  </div>
+	  <div class="pure-u-1-4">
+	    <div class="element orange">
+	      <img class="pure-img" src="Q3_quadrilateral.png">
+	      <div class="label">
+		\( \mathrm{BDM}^\mathrm{f}_{1} \)
+	      </div>
+	    </div>
+	  </div>
+	  <div class="pure-u-1-4">
+	    <div class="element blue">
+	      <img class="pure-img" src="Q3_quadrilateral.png">
+	      <div class="label">
+		\( \mathrm{BDM}^\mathrm{f}_{1} \)
+	      </div>
+	    </div>
+	  </div>
+	  <div class="pure-u-1-4">
+	  </div>
+	</div>
+	<hr>
+	<div class="pure-g">
+	  <div class="pure-u-1-4">
+	    <div class="element green">
+	      <img class="pure-img" src="Q3_hexahedron.png">
+	      <div class="label">
+		\( \mathrm{BDM}^\mathrm{f}_{1} \)
+	      </div>
+	    </div>
+	  </div>
+	  <div class="pure-u-1-4">
+	    <div class="element red">
+	      <img class="pure-img" src="Q3_hexahedron.png">
+	      <div class="label">
+		\( \mathrm{BDM}^\mathrm{f}_{1} \)
+	      </div>
+	    </div>
+	  </div>
+	  <div class="pure-u-1-4">
+	    <div class="element yellow">
+	      <img class="pure-img" src="Q3_hexahedron.png">
+	      <div class="label">
+		\( \mathrm{BDM}^\mathrm{f}_{1} \)
+	      </div>
+	    </div>
+	  </div>
+	  <div class="pure-u-1-4">
+	    <div class="element blue">
+	      <img class="pure-img" src="Q3_hexahedron.png">
+	      <div class="label">
+		\( \mathrm{BDM}^\mathrm{f}_{1} \)
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<div class="pure-g">
+	  <div class="pure-u-1-4">
+	    <div class="element green">
+	      <img class="pure-img" src="Q3_hexahedron.png">
+	      <div class="label">
+		\( \mathrm{BDM}^\mathrm{f}_{1} \)
+	      </div>
+	    </div>
+	  </div>
+	  <div class="pure-u-1-4">
+	    <div class="element red">
+	      <img class="pure-img" src="Q3_hexahedron.png">
+	      <div class="label">
+		\( \mathrm{BDM}^\mathrm{f}_{1} \)
+	      </div>
+	    </div>
+	  </div>
+	  <div class="pure-u-1-4">
+	    <div class="element yellow">
+	      <img class="pure-img" src="Q3_hexahedron.png">
+	      <div class="label">
+		\( \mathrm{BDM}^\mathrm{f}_{1} \)
+	      </div>
+	    </div>
+	  </div>
+	  <div class="pure-u-1-4">
+	    <div class="element blue">
+	      <img class="pure-img" src="Q3_hexahedron.png">
+	      <div class="label">
+		\( \mathrm{BDM}^\mathrm{f}_{1} \)
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<div class="pure-g">
+	  <div class="pure-u-1-4">
+	    <div class="element green">
+	      <img class="pure-img" src="Q3_hexahedron.png">
+	      <div class="label">
+		\( \mathrm{BDM}^\mathrm{f}_{1} \)
+	      </div>
+	    </div>
+	  </div>
+	  <div class="pure-u-1-4">
+	    <div class="element red">
+	      <img class="pure-img" src="Q3_hexahedron.png">
+	      <div class="label">
+		\( \mathrm{BDM}^\mathrm{f}_{1} \)
+	      </div>
+	    </div>
+	  </div>
+	  <div class="pure-u-1-4">
+	    <div class="element yellow">
+	      <img class="pure-img" src="Q3_hexahedron.png">
+	      <div class="label">
+		\( \mathrm{BDM}^\mathrm{f}_{1} \)
+	      </div>
+	    </div>
+	  </div>
+	  <div class="pure-u-1-4">
+	    <div class="element blue">
+	      <img class="pure-img" src="Q3_hexahedron.png">
+	      <div class="label">
+		\( \mathrm{BDM}^\mathrm{f}_{1} \)
+	      </div>
+	    </div>
+	  </div>
 	</div>
       </div>
-      <hr>
-      <!-- Elements below the table -->
-      <div class="row">
-        <div class="col-md-7">
-          <h2>Finite Elements</h2>
-          <p>The table presents the primary spaces of finite elements for the discretization of the fundamental operators of vector calculus: the gradient, curl, and divergence.  A finite element space is a space of piecewise polynomial functions on a domain determined by: (1) a mesh of the domain into polyhedral cells called <em>elements</em>, (2) a finite dimensional space of polynomial functions on each element called the <em>shape functions</em>, and (3) a unisolvent set of functionals on the shape functions of each element called <em>degrees of freedom</em> (DOFs), each DOF being associated to a (generalized) face of the element, and specifying a quantity which takes a single value for all elements sharing the face.  The element diagrams depict the DOFs and their association to faces.</p>
-          <p>The spaces \(\mathcal{P}_r^-\Lambda^k\) and \(\mathcal{P}_r\Lambda^k\) depicted on the left half of the table are the two primary families of finite element spaces for meshes of simplices, and the spaces \(\mathcal{Q}_r^-\Lambda^k\) and \(\mathcal{S}_r\Lambda^k\) on the right side are for meshes of cubes or boxes. Each is defined in any dimension \(n\ge 1\), for each value of the polynomial degree \(r\ge 1\), and each value of \(0 \leq k \leq n\).  The parameter \(k\) refers to the operator: the spaces belong to the domain of the \(k\)th exterior derivative.  Thus for \(k=0\), the spaces discretize the Sobolev space \(H^1\), the domain of the gradient operator; for \(k=1\), they discretize \(H(\curl)\), the domain of the curl; for \(k=n-1\) they discretize \(H(\div)\), the domain of the divergence; and for \(k=n\), they discretize \(L^2\).</p>
-          <p>The spaces \(\mathcal{P}_r^-\Lambda^0\) and \(\mathcal{P}_r\Lambda^0\), which coincide, are the earliest finite elements, going back in the case \(r=1\) of linear elements to <a href="#ref-1">Courant,</a> and collectively referred to as the Lagrange elements.  The spaces \(\mathcal{P}_{r+1}^-\Lambda^n\) and \(\mathcal{P}_r\Lambda^n\), which also coincide, are the discontinuous Galerkin elements, consisting of piecewise polynomials with no interelement continuity imposed, first introduced by <a href="#ref-2">Reed and Hill</a>.  The space \(\mathcal{P}_r^-\Lambda^1\) in \(2\) dimensions was introduced by <a href="#ref-3">Raviart and Thomas</a> and generalized to the \(3\)-dimensional spaces \(\mathcal{P}_r^-\Lambda^1\) and \(\mathcal{P}_r^-\Lambda^2\) by <a href="#ref-4">Nédélec</a>,  while \(\mathcal{P}_r\Lambda^1\) is due to <a href="#ref-5">Brezzi, Douglas, and Marini</a>  in \(2\) dimensions, its generalization to \(3\) dimensions again due to <a href="#ref-6">Nédélec</a>. The unified treatment and notation of the \(\mathcal{P}_r^-\Lambda^k\) and \(\mathcal{P}_r\Lambda^k\) families is due to <a href="#ref-7">Arnold, Falk, and Winther</a> as part of finite element exterior calculus.  The space \(\mathcal{P}_1^-\Lambda^k\) is the span of the “elementary forms” introduced by <a href="#ref-8">Whitney</a>.</p>
-          <p>The family \(\mathcal{Q}_r^-\Lambda^k\) of cubical elements can be derived from the \(1\)-dimensional Lagrange and discontinuous Galerkin elements by a tensor product construction detailed by <a href="#ref-9">Arnold, Boffi, and Bonizzoni</a>, but for the most part were presented individually along with the corresponding simplicial elements in the papers mentioned.  The second cubical family \(\mathcal{S}_r\Lambda^k\) is due to <a href="#ref-10">Arnold and Awanou</a>.</p>
-          <p>The finite element spaces on simplices have been implemented as part of <a href="http://fenicsproject.org">the FEniCS Project</a> and <a href="#ref-11">may be accessed in FEniCS</a> via <code>FunctionSpace(mesh, "P- Lambda", r, k)</code> and and <code>FunctionSpace(mesh, "P Lambda", r, k)</code> for \(\mathcal{P}_r^-\Lambda^k\) and \(\mathcal{P}_r\Lambda^k\), respectively.</p>
-        </div>
-        <div class="col-md-4 col-md-offset-1">
-          <div class="row">
-            <div class="col-md-12">
-              <h2>Legend</h2>
-              <dl class="dl-horizontal">
-                <dt>Prefix <strong>'d'</strong></dt>
-                <dd>Discontinuous variant</dd>
-                <dt>Suffix <strong>'c'</strong></dt>
-                <dd>Cubic variant</dd>
-                <dt>Superscript <strong>'e'</strong> or <strong>'f'</strong></dt>
-                <dd>Edge or facet versions</dd>
-                <dt>Subscript</dt>
-                <dd>Degree</dd>
-              </dl>
-            </div>
-          </div>
-          <hr>
-          <div class="row">
-            <div class="col-md-12">
-              <h2>References</h2>
-              <ol class="small">
-                <li id="ref-1">R. Courant, Bulletin of the American Mathematical Society 49, 1943.</li>
-                <li id="ref-2">W. H. Reed and T. R. Hill, Los Alamos report LA-UR-73-479, 1973.</li>
-                <li id="ref-3">P. A. Raviart and J. M. Thomas, Lecture Notes in Mathematics 606, Springer, 1977.
-                <li id="ref-4">J. C. Nédélec, Numerische Mathematik 35, 1980.</li>
-                <li id="ref-5">F. Brezzi, J. Douglas Jr., and L. D. Marini, Numerische Mathematik 47, 1985.</li>
-                <li id="ref-6">J. C. Nédélec, Numerische Mathematik 50, 1986.</li>
-                <li id="ref-7">D. N. Arnold, R.S. Falk, and R. Winther, Acta Numerica 15, 2006.</li>
-                <li id="ref-8">H. Whitney, Geometric Integration Theory, 1957.</li>
-                <li id="ref-9">D. N. Arnold, D. Boffi, and F. Bonizzoni, Numerische Mathematik, 2014.</li>
-                <li id="ref-10">D. N. Arnold and G. Awanou, Mathematics of Computation, 2013.</li>
-                <li id="ref-11">A. Logg, K.-A. Mardal, and G.N. Wells (eds.), Automated Solution of Differential Equations by the Finite Element Method, Springer, 2012.</li>
-              </ol>
-            </div>
-          </div>
-          <hr>
-          <div class="row">
-            <div class="col-md-12">
-              <h2>Credits</h2>
-              <p><button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#P1_tetrahedron">Demo element detail 1</button></p>
-              <p><button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#P2_tetrahedron">Demo element detail 2</button></p>
-            </div>
-          </div>
-        </div>
+      <div class="pure-u-1-24">
+	<!-- Blank -->
       </div>
-
-      <!-- P1_tetrahedron detail  -->
-      <div class="modal fade" id="P1_tetrahedron" tabindex="-1" role="dialog">
-        <div class="modal-dialog">
-          <div class="modal-content green">
-            <div class="modal-body">
-              <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-              <div class="row">
-                <div class="col-xs-10">
-                  <img src="images/large/P1_tetrahedron.png" alt="P1_tetrahedron element" class="img-responsive">
-                </div>
-                <div class="col-xs-2">
-                  <p class="text-left"><strong>4</strong></p>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-xs-6">
-                  <p>$$\mathrm{P}_1$$</p>
-                </div>
-                <div class="col-xs-6">
-                  <p>$$\Pm{1}{0}{3}$$</p>
-                </div>
-              </div>
-              <hr>
-              <div class="row">
-                <div class="col-xs-12">
-                  <p>$$\dof{4}{0}{0}{0}{1} = 4$$</p>
-                </div>
-              </div>
-              <hr>
-              <div class="row">
-                <div class="col-xs-12">
-                  <p class="text-center"><code>("P", tetrahedron, 1)</code></p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="pure-u-5-24">
+	<div class="pure-g">
+	  <div class="pure-u-1-4">
+	    <div class="the_k">
+	      k = 0
+	    </div>
+	  </div>
+	  <div class="pure-u-1-4">
+	    <div class="the_k">
+	      k = 1
+	    </div>
+	  </div>
+	  <div class="pure-u-1-4">
+	    <div class="the_k">
+	      k = 2
+	    </div>
+	  </div>
+	  <div class="pure-u-1-4">
+	    <div class="the_k">
+	      k = 3
+	    </div>
+	  </div>
+	</div>
+	<hr>
+	<div class="pure-g">
+	  <div class="pure-u-1-4">
+	    <div class="element green">
+	      <img class="pure-img" src="P3_interval.png">
+	      <div class="label">
+		\( \mathrm{BDM}^\mathrm{f}_{1} \)
+	      </div>
+	    </div>
+	  </div>
+	  <div class="pure-u-1-4">
+	    <div class="element blue">
+	      <img class="pure-img" src="P3_interval.png">
+	      <div class="label">
+		\( \mathrm{BDM}^\mathrm{f}_{1} \)
+	      </div>
+	    </div>
+	  </div>
+	  <div class="pure-u-1-4">
+	  </div>
+	  <div class="pure-u-1-4">
+	  </div>
+	</div>
+	<div class="pure-g">
+	  <div class="pure-u-1-4">
+	    <div class="element green">
+	      <img class="pure-img" src="P3_interval.png">
+	      <div class="label">
+		\( \mathrm{BDM}^\mathrm{f}_{1} \)
+	      </div>
+	    </div>
+	  </div>
+	  <div class="pure-u-1-4">
+	    <div class="element blue">
+	      <img class="pure-img" src="P3_interval.png">
+	      <div class="label">
+		\( \mathrm{BDM}^\mathrm{f}_{1} \)
+	      </div>
+	    </div>
+	  </div>
+	  <div class="pure-u-1-4">
+	  </div>
+	  <div class="pure-u-1-4">
+	  </div>
+	</div>
+	<div class="pure-g">
+	  <div class="pure-u-1-4">
+	    <div class="element green">
+	      <img class="pure-img" src="P3_interval.png">
+	      <div class="label">
+		\( \mathrm{BDM}^\mathrm{f}_{1} \)
+	      </div>
+	    </div>
+	  </div>
+	  <div class="pure-u-1-4">
+	    <div class="element blue">
+	      <img class="pure-img" src="P3_interval.png">
+	      <div class="label">
+		\( \mathrm{BDM}^\mathrm{f}_{1} \)
+	      </div>
+	    </div>
+	  </div>
+	  <div class="pure-u-1-4">
+	  </div>
+	  <div class="pure-u-1-4">
+	  </div>
+	</div>
+	<hr>
+	<div class="pure-g">
+	  <div class="pure-u-1-4">
+	    <div class="element green">
+	      <img class="pure-img" src="Q3_quadrilateral.png">
+	      <div class="label">
+		\( \mathrm{BDM}^\mathrm{f}_{1} \)
+	      </div>
+	    </div>
+	  </div>
+	  <div class="pure-u-1-4">
+	    <div class="element orange">
+	      <img class="pure-img" src="Q3_quadrilateral.png">
+	      <div class="label">
+		\( \mathrm{BDM}^\mathrm{f}_{1} \)
+	      </div>
+	    </div>
+	  </div>
+	  <div class="pure-u-1-4">
+	    <div class="element blue">
+	      <img class="pure-img" src="Q3_quadrilateral.png">
+	      <div class="label">
+		\( \mathrm{BDM}^\mathrm{f}_{1} \)
+	      </div>
+	    </div>
+	  </div>
+	  <div class="pure-u-1-4">
+	  </div>
+	</div>
+	<div class="pure-g">
+	  <div class="pure-u-1-4">
+	    <div class="element green">
+	      <img class="pure-img" src="Q3_quadrilateral.png">
+	      <div class="label">
+		\( \mathrm{BDM}^\mathrm{f}_{1} \)
+	      </div>
+	    </div>
+	  </div>
+	  <div class="pure-u-1-4">
+	    <div class="element orange">
+	      <img class="pure-img" src="Q3_quadrilateral.png">
+	      <div class="label">
+		\( \mathrm{BDM}^\mathrm{f}_{1} \)
+	      </div>
+	    </div>
+	  </div>
+	  <div class="pure-u-1-4">
+	    <div class="element blue">
+	      <img class="pure-img" src="Q3_quadrilateral.png">
+	      <div class="label">
+		\( \mathrm{BDM}^\mathrm{f}_{1} \)
+	      </div>
+	    </div>
+	  </div>
+	  <div class="pure-u-1-4">
+	  </div>
+	</div>
+	<div class="pure-g">
+	  <div class="pure-u-1-4">
+	    <div class="element green">
+	      <img class="pure-img" src="Q3_quadrilateral.png">
+	      <div class="label">
+		\( \mathrm{BDM}^\mathrm{f}_{1} \)
+	      </div>
+	    </div>
+	  </div>
+	  <div class="pure-u-1-4">
+	    <div class="element orange">
+	      <img class="pure-img" src="Q3_quadrilateral.png">
+	      <div class="label">
+		\( \mathrm{BDM}^\mathrm{f}_{1} \)
+	      </div>
+	    </div>
+	  </div>
+	  <div class="pure-u-1-4">
+	    <div class="element blue">
+	      <img class="pure-img" src="Q3_quadrilateral.png">
+	      <div class="label">
+		\( \mathrm{BDM}^\mathrm{f}_{1} \)
+	      </div>
+	    </div>
+	  </div>
+	  <div class="pure-u-1-4">
+	  </div>
+	</div>
+	<hr>
+	<div class="pure-g">
+	  <div class="pure-u-1-4">
+	    <div class="element green">
+	      <img class="pure-img" src="Q3_hexahedron.png">
+	      <div class="label">
+		\( \mathrm{BDM}^\mathrm{f}_{1} \)
+	      </div>
+	    </div>
+	  </div>
+	  <div class="pure-u-1-4">
+	    <div class="element red">
+	      <img class="pure-img" src="Q3_hexahedron.png">
+	      <div class="label">
+		\( \mathrm{BDM}^\mathrm{f}_{1} \)
+	      </div>
+	    </div>
+	  </div>
+	  <div class="pure-u-1-4">
+	    <div class="element yellow">
+	      <img class="pure-img" src="Q3_hexahedron.png">
+	      <div class="label">
+		\( \mathrm{BDM}^\mathrm{f}_{1} \)
+	      </div>
+	    </div>
+	  </div>
+	  <div class="pure-u-1-4">
+	    <div class="element blue">
+	      <img class="pure-img" src="Q3_hexahedron.png">
+	      <div class="label">
+		\( \mathrm{BDM}^\mathrm{f}_{1} \)
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<div class="pure-g">
+	  <div class="pure-u-1-4">
+	    <div class="element green">
+	      <img class="pure-img" src="Q3_hexahedron.png">
+	      <div class="label">
+		\( \mathrm{BDM}^\mathrm{f}_{1} \)
+	      </div>
+	    </div>
+	  </div>
+	  <div class="pure-u-1-4">
+	    <div class="element red">
+	      <img class="pure-img" src="Q3_hexahedron.png">
+	      <div class="label">
+		\( \mathrm{BDM}^\mathrm{f}_{1} \)
+	      </div>
+	    </div>
+	  </div>
+	  <div class="pure-u-1-4">
+	    <div class="element yellow">
+	      <img class="pure-img" src="Q3_hexahedron.png">
+	      <div class="label">
+		\( \mathrm{BDM}^\mathrm{f}_{1} \)
+	      </div>
+	    </div>
+	  </div>
+	  <div class="pure-u-1-4">
+	    <div class="element blue">
+	      <img class="pure-img" src="Q3_hexahedron.png">
+	      <div class="label">
+		\( \mathrm{BDM}^\mathrm{f}_{1} \)
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<div class="pure-g">
+	  <div class="pure-u-1-4">
+	    <div class="element green">
+	      <img class="pure-img" src="Q3_hexahedron.png">
+	      <div class="label">
+		\( \mathrm{BDM}^\mathrm{f}_{1} \)
+	      </div>
+	    </div>
+	  </div>
+	  <div class="pure-u-1-4">
+	    <div class="element red">
+	      <img class="pure-img" src="Q3_hexahedron.png">
+	      <div class="label">
+		\( \mathrm{BDM}^\mathrm{f}_{1} \)
+	      </div>
+	    </div>
+	  </div>
+	  <div class="pure-u-1-4">
+	    <div class="element yellow">
+	      <img class="pure-img" src="Q3_hexahedron.png">
+	      <div class="label">
+		\( \mathrm{BDM}^\mathrm{f}_{1} \)
+	      </div>
+	    </div>
+	  </div>
+	  <div class="pure-u-1-4">
+	    <div class="element blue">
+	      <img class="pure-img" src="Q3_hexahedron.png">
+	      <div class="label">
+		\( \mathrm{BDM}^\mathrm{f}_{1} \)
+	      </div>
+	    </div>
+	  </div>
+	</div>
       </div>
-
-      <!-- P2_tetrahedron detail  -->
-      <div class="modal fade" id="P2_tetrahedron" tabindex="-1" role="dialog">
-        <div class="modal-dialog">
-          <div class="modal-content green">
-            <div class="modal-body">
-              <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-              <div class="row">
-                <div class="col-xs-10">
-                  <img src="images/large/P2_tetrahedron.png" alt="P2_tetrahedron element" class="img-responsive">
-                </div>
-                <div class="col-xs-2">
-                  <p class="text-left"><strong>10</strong></p>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-xs-6">
-                  <p>$$\mathrm{P}_2$$</p>
-                </div>
-                <div class="col-xs-6">
-                  <p>$$\Pm{2}{0}{3}$$</p>
-                </div>
-              </div>
-              <hr>
-              <div class="row">
-                <div class="col-xs-12">
-                  <p>$$\dof{4}{1}{0}{0}{1} \pl \dof{6}{0}{1}{1}{1} = 10$$</p>
-                </div>
-              </div>
-              <hr>
-              <div class="row">
-                <div class="col-xs-12">
-                  <p class="text-center"><code>("P", tetrahedron, 2)</code></p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="pure-u-1-24">
+	<!-- Blank -->
       </div>
-
-      <!-- P3_tetrahedron detail  -->
-      <div class="modal fade" id="P3_tetrahedron" tabindex="-1" role="dialog">
-        <div class="modal-dialog">
-          <div class="modal-content green">
-            <div class="modal-body">
-              <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-              <div class="row">
-                <div class="col-xs-10">
-                  <img src="images/large/P3_tetrahedron.png" alt="P3_tetrahedron element" class="img-responsive">
-                </div>
-                <div class="col-xs-2">
-                  <p class="text-left"><strong>20</strong></p>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-xs-6">
-                  <p>$$\mathrm{P}_3$$</p>
-                </div>
-                <div class="col-xs-6">
-                  <p>$$\Pm{3}{0}{3}$$</p>
-                </div>
-              </div>
-              <hr>
-              <div class="row">
-                <div class="col-xs-12">
-                  <p>$$\dof{4}{2}{0}{0}{1} \pl \dof{6}{1}{1}{1}{2} \pl \dof{4}{0}{2}{2}{1} = 20$$</p>
-                </div>
-              </div>
-              <hr>
-              <div class="row">
-                <div class="col-xs-12">
-                  <p class="text-center"><code>("P", tetrahedron, 3)</code></p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="pure-u-5-24">
+	<div class="pure-g">
+	  <div class="pure-u-1-4">
+	    <div class="the_k">
+	      k = 0
+	    </div>
+	  </div>
+	  <div class="pure-u-1-4">
+	    <div class="the_k">
+	      k = 1
+	    </div>
+	  </div>
+	  <div class="pure-u-1-4">
+	    <div class="the_k">
+	      k = 2
+	    </div>
+	  </div>
+	  <div class="pure-u-1-4">
+	    <div class="the_k">
+	      k = 3
+	    </div>
+	  </div>
+	</div>
+	<hr>
+	<div class="pure-g">
+	  <div class="pure-u-1-4">
+	    <div class="element green">
+	      <img class="pure-img" src="P3_interval.png">
+	      <div class="label">
+		\( \mathrm{BDM}^\mathrm{f}_{1} \)
+	      </div>
+	    </div>
+	  </div>
+	  <div class="pure-u-1-4">
+	    <div class="element blue">
+	      <img class="pure-img" src="P3_interval.png">
+	      <div class="label">
+		\( \mathrm{BDM}^\mathrm{f}_{1} \)
+	      </div>
+	    </div>
+	  </div>
+	  <div class="pure-u-1-4">
+	  </div>
+	  <div class="pure-u-1-4">
+	  </div>
+	</div>
+	<div class="pure-g">
+	  <div class="pure-u-1-4">
+	    <div class="element green">
+	      <img class="pure-img" src="P3_interval.png">
+	      <div class="label">
+		\( \mathrm{BDM}^\mathrm{f}_{1} \)
+	      </div>
+	    </div>
+	  </div>
+	  <div class="pure-u-1-4">
+	    <div class="element blue">
+	      <img class="pure-img" src="P3_interval.png">
+	      <div class="label">
+		\( \mathrm{BDM}^\mathrm{f}_{1} \)
+	      </div>
+	    </div>
+	  </div>
+	  <div class="pure-u-1-4">
+	  </div>
+	  <div class="pure-u-1-4">
+	  </div>
+	</div>
+	<div class="pure-g">
+	  <div class="pure-u-1-4">
+	    <div class="element green">
+	      <img class="pure-img" src="P3_interval.png">
+	      <div class="label">
+		\( \mathrm{BDM}^\mathrm{f}_{1} \)
+	      </div>
+	    </div>
+	  </div>
+	  <div class="pure-u-1-4">
+	    <div class="element blue">
+	      <img class="pure-img" src="P3_interval.png">
+	      <div class="label">
+		\( \mathrm{BDM}^\mathrm{f}_{1} \)
+	      </div>
+	    </div>
+	  </div>
+	  <div class="pure-u-1-4">
+	  </div>
+	  <div class="pure-u-1-4">
+	  </div>
+	</div>
+	<hr>
+	<div class="pure-g">
+	  <div class="pure-u-1-4">
+	    <div class="element green">
+	      <img class="pure-img" src="Q3_quadrilateral.png">
+	      <div class="label">
+		\( \mathrm{BDM}^\mathrm{f}_{1} \)
+	      </div>
+	    </div>
+	  </div>
+	  <div class="pure-u-1-4">
+	    <div class="element orange">
+	      <img class="pure-img" src="Q3_quadrilateral.png">
+	      <div class="label">
+		\( \mathrm{BDM}^\mathrm{f}_{1} \)
+	      </div>
+	    </div>
+	  </div>
+	  <div class="pure-u-1-4">
+	    <div class="element blue">
+	      <img class="pure-img" src="Q3_quadrilateral.png">
+	      <div class="label">
+		\( \mathrm{BDM}^\mathrm{f}_{1} \)
+	      </div>
+	    </div>
+	  </div>
+	  <div class="pure-u-1-4">
+	  </div>
+	</div>
+	<div class="pure-g">
+	  <div class="pure-u-1-4">
+	    <div class="element green">
+	      <img class="pure-img" src="Q3_quadrilateral.png">
+	      <div class="label">
+		\( \mathrm{BDM}^\mathrm{f}_{1} \)
+	      </div>
+	    </div>
+	  </div>
+	  <div class="pure-u-1-4">
+	    <div class="element orange">
+	      <img class="pure-img" src="Q3_quadrilateral.png">
+	      <div class="label">
+		\( \mathrm{BDM}^\mathrm{f}_{1} \)
+	      </div>
+	    </div>
+	  </div>
+	  <div class="pure-u-1-4">
+	    <div class="element blue">
+	      <img class="pure-img" src="Q3_quadrilateral.png">
+	      <div class="label">
+		\( \mathrm{BDM}^\mathrm{f}_{1} \)
+	      </div>
+	    </div>
+	  </div>
+	  <div class="pure-u-1-4">
+	  </div>
+	</div>
+	<div class="pure-g">
+	  <div class="pure-u-1-4">
+	    <div class="element green">
+	      <img class="pure-img" src="Q3_quadrilateral.png">
+	      <div class="label">
+		\( \mathrm{BDM}^\mathrm{f}_{1} \)
+	      </div>
+	    </div>
+	  </div>
+	  <div class="pure-u-1-4">
+	    <div class="element orange">
+	      <img class="pure-img" src="Q3_quadrilateral.png">
+	      <div class="label">
+		\( \mathrm{BDM}^\mathrm{f}_{1} \)
+	      </div>
+	    </div>
+	  </div>
+	  <div class="pure-u-1-4">
+	    <div class="element blue">
+	      <img class="pure-img" src="Q3_quadrilateral.png">
+	      <div class="label">
+		\( \mathrm{BDM}^\mathrm{f}_{1} \)
+	      </div>
+	    </div>
+	  </div>
+	  <div class="pure-u-1-4">
+	  </div>
+	</div>
+	<hr>
+	<div class="pure-g">
+	  <div class="pure-u-1-4">
+	    <div class="element green">
+	      <img class="pure-img" src="Q3_hexahedron.png">
+	      <div class="label">
+		\( \mathrm{BDM}^\mathrm{f}_{1} \)
+	      </div>
+	    </div>
+	  </div>
+	  <div class="pure-u-1-4">
+	    <div class="element red">
+	      <img class="pure-img" src="Q3_hexahedron.png">
+	      <div class="label">
+		\( \mathrm{BDM}^\mathrm{f}_{1} \)
+	      </div>
+	    </div>
+	  </div>
+	  <div class="pure-u-1-4">
+	    <div class="element yellow">
+	      <img class="pure-img" src="Q3_hexahedron.png">
+	      <div class="label">
+		\( \mathrm{BDM}^\mathrm{f}_{1} \)
+	      </div>
+	    </div>
+	  </div>
+	  <div class="pure-u-1-4">
+	    <div class="element blue">
+	      <img class="pure-img" src="Q3_hexahedron.png">
+	      <div class="label">
+		\( \mathrm{BDM}^\mathrm{f}_{1} \)
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<div class="pure-g">
+	  <div class="pure-u-1-4">
+	    <div class="element green">
+	      <img class="pure-img" src="Q3_hexahedron.png">
+	      <div class="label">
+		\( \mathrm{BDM}^\mathrm{f}_{1} \)
+	      </div>
+	    </div>
+	  </div>
+	  <div class="pure-u-1-4">
+	    <div class="element red">
+	      <img class="pure-img" src="Q3_hexahedron.png">
+	      <div class="label">
+		\( \mathrm{BDM}^\mathrm{f}_{1} \)
+	      </div>
+	    </div>
+	  </div>
+	  <div class="pure-u-1-4">
+	    <div class="element yellow">
+	      <img class="pure-img" src="Q3_hexahedron.png">
+	      <div class="label">
+		\( \mathrm{BDM}^\mathrm{f}_{1} \)
+	      </div>
+	    </div>
+	  </div>
+	  <div class="pure-u-1-4">
+	    <div class="element blue">
+	      <img class="pure-img" src="Q3_hexahedron.png">
+	      <div class="label">
+		\( \mathrm{BDM}^\mathrm{f}_{1} \)
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<div class="pure-g">
+	  <div class="pure-u-1-4">
+	    <div class="element green">
+	      <img class="pure-img" src="Q3_hexahedron.png">
+	      <div class="label">
+		\( \mathrm{BDM}^\mathrm{f}_{1} \)
+	      </div>
+	    </div>
+	  </div>
+	  <div class="pure-u-1-4">
+	    <div class="element red">
+	      <img class="pure-img" src="Q3_hexahedron.png">
+	      <div class="label">
+		\( \mathrm{BDM}^\mathrm{f}_{1} \)
+	      </div>
+	    </div>
+	  </div>
+	  <div class="pure-u-1-4">
+	    <div class="element yellow">
+	      <img class="pure-img" src="Q3_hexahedron.png">
+	      <div class="label">
+		\( \mathrm{BDM}^\mathrm{f}_{1} \)
+	      </div>
+	    </div>
+	  </div>
+	  <div class="pure-u-1-4">
+	    <div class="element blue">
+	      <img class="pure-img" src="Q3_hexahedron.png">
+	      <div class="label">
+		\( \mathrm{BDM}^\mathrm{f}_{1} \)
+	      </div>
+	    </div>
+	  </div>
+	</div>
       </div>
-
+      <div class="pure-u-1-24">
+	<!-- Blank -->
+      </div>
+      <div class="pure-u-5-24">
+	<div class="pure-g">
+	  <div class="pure-u-1-4">
+	    <div class="the_k">
+	      k = 0
+	    </div>
+	  </div>
+	  <div class="pure-u-1-4">
+	    <div class="the_k">
+	      k = 1
+	    </div>
+	  </div>
+	  <div class="pure-u-1-4">
+	    <div class="the_k">
+	      k = 2
+	    </div>
+	  </div>
+	  <div class="pure-u-1-4">
+	    <div class="the_k">
+	      k = 3
+	    </div>
+	  </div>
+	</div>
+	<hr>
+	<div class="pure-g">
+	  <div class="pure-u-1-4">
+	    <div class="element green">
+	      <img class="pure-img" src="P3_interval.png">
+	      <div class="label">
+		\( \mathrm{BDM}^\mathrm{f}_{1} \)
+	      </div>
+	    </div>
+	  </div>
+	  <div class="pure-u-1-4">
+	    <div class="element blue">
+	      <img class="pure-img" src="P3_interval.png">
+	      <div class="label">
+		\( \mathrm{BDM}^\mathrm{f}_{1} \)
+	      </div>
+	    </div>
+	  </div>
+	  <div class="pure-u-1-4">
+	  </div>
+	  <div class="pure-u-1-4">
+	  </div>
+	</div>
+	<div class="pure-g">
+	  <div class="pure-u-1-4">
+	    <div class="element green">
+	      <img class="pure-img" src="P3_interval.png">
+	      <div class="label">
+		\( \mathrm{BDM}^\mathrm{f}_{1} \)
+	      </div>
+	    </div>
+	  </div>
+	  <div class="pure-u-1-4">
+	    <div class="element blue">
+	      <img class="pure-img" src="P3_interval.png">
+	      <div class="label">
+		\( \mathrm{BDM}^\mathrm{f}_{1} \)
+	      </div>
+	    </div>
+	  </div>
+	  <div class="pure-u-1-4">
+	  </div>
+	  <div class="pure-u-1-4">
+	  </div>
+	</div>
+	<div class="pure-g">
+	  <div class="pure-u-1-4">
+	    <div class="element green">
+	      <img class="pure-img" src="P3_interval.png">
+	      <div class="label">
+		\( \mathrm{BDM}^\mathrm{f}_{1} \)
+	      </div>
+	    </div>
+	  </div>
+	  <div class="pure-u-1-4">
+	    <div class="element blue">
+	      <img class="pure-img" src="P3_interval.png">
+	      <div class="label">
+		\( \mathrm{BDM}^\mathrm{f}_{1} \)
+	      </div>
+	    </div>
+	  </div>
+	  <div class="pure-u-1-4">
+	  </div>
+	  <div class="pure-u-1-4">
+	  </div>
+	</div>
+	<hr>
+	<div class="pure-g">
+	  <div class="pure-u-1-4">
+	    <div class="element green">
+	      <img class="pure-img" src="Q3_quadrilateral.png">
+	      <div class="label">
+		\( \mathrm{BDM}^\mathrm{f}_{1} \)
+	      </div>
+	    </div>
+	  </div>
+	  <div class="pure-u-1-4">
+	    <div class="element orange">
+	      <img class="pure-img" src="Q3_quadrilateral.png">
+	      <div class="label">
+		\( \mathrm{BDM}^\mathrm{f}_{1} \)
+	      </div>
+	    </div>
+	  </div>
+	  <div class="pure-u-1-4">
+	    <div class="element blue">
+	      <img class="pure-img" src="Q3_quadrilateral.png">
+	      <div class="label">
+		\( \mathrm{BDM}^\mathrm{f}_{1} \)
+	      </div>
+	    </div>
+	  </div>
+	  <div class="pure-u-1-4">
+	  </div>
+	</div>
+	<div class="pure-g">
+	  <div class="pure-u-1-4">
+	    <div class="element green">
+	      <img class="pure-img" src="Q3_quadrilateral.png">
+	      <div class="label">
+		\( \mathrm{BDM}^\mathrm{f}_{1} \)
+	      </div>
+	    </div>
+	  </div>
+	  <div class="pure-u-1-4">
+	    <div class="element orange">
+	      <img class="pure-img" src="Q3_quadrilateral.png">
+	      <div class="label">
+		\( \mathrm{BDM}^\mathrm{f}_{1} \)
+	      </div>
+	    </div>
+	  </div>
+	  <div class="pure-u-1-4">
+	    <div class="element blue">
+	      <img class="pure-img" src="Q3_quadrilateral.png">
+	      <div class="label">
+		\( \mathrm{BDM}^\mathrm{f}_{1} \)
+	      </div>
+	    </div>
+	  </div>
+	  <div class="pure-u-1-4">
+	  </div>
+	</div>
+	<div class="pure-g">
+	  <div class="pure-u-1-4">
+	    <div class="element green">
+	      <img class="pure-img" src="Q3_quadrilateral.png">
+	      <div class="label">
+		\( \mathrm{BDM}^\mathrm{f}_{1} \)
+	      </div>
+	    </div>
+	  </div>
+	  <div class="pure-u-1-4">
+	    <div class="element orange">
+	      <img class="pure-img" src="Q3_quadrilateral.png">
+	      <div class="label">
+		\( \mathrm{BDM}^\mathrm{f}_{1} \)
+	      </div>
+	    </div>
+	  </div>
+	  <div class="pure-u-1-4">
+	    <div class="element blue">
+	      <img class="pure-img" src="Q3_quadrilateral.png">
+	      <div class="label">
+		\( \mathrm{BDM}^\mathrm{f}_{1} \)
+	      </div>
+	    </div>
+	  </div>
+	  <div class="pure-u-1-4">
+	  </div>
+	</div>
+	<hr>
+	<div class="pure-g">
+	  <div class="pure-u-1-4">
+	    <div class="element green">
+	      <img class="pure-img" src="Q3_hexahedron.png">
+	      <div class="label">
+		\( \mathrm{BDM}^\mathrm{f}_{1} \)
+	      </div>
+	    </div>
+	  </div>
+	  <div class="pure-u-1-4">
+	    <div class="element red">
+	      <img class="pure-img" src="Q3_hexahedron.png">
+	      <div class="label">
+		\( \mathrm{BDM}^\mathrm{f}_{1} \)
+	      </div>
+	    </div>
+	  </div>
+	  <div class="pure-u-1-4">
+	    <div class="element yellow">
+	      <img class="pure-img" src="Q3_hexahedron.png">
+	      <div class="label">
+		\( \mathrm{BDM}^\mathrm{f}_{1} \)
+	      </div>
+	    </div>
+	  </div>
+	  <div class="pure-u-1-4">
+	    <div class="element blue">
+	      <img class="pure-img" src="Q3_hexahedron.png">
+	      <div class="label">
+		\( \mathrm{BDM}^\mathrm{f}_{1} \)
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<div class="pure-g">
+	  <div class="pure-u-1-4">
+	    <div class="element green">
+	      <img class="pure-img" src="Q3_hexahedron.png">
+	      <div class="label">
+		\( \mathrm{BDM}^\mathrm{f}_{1} \)
+	      </div>
+	    </div>
+	  </div>
+	  <div class="pure-u-1-4">
+	    <div class="element red">
+	      <img class="pure-img" src="Q3_hexahedron.png">
+	      <div class="label">
+		\( \mathrm{BDM}^\mathrm{f}_{1} \)
+	      </div>
+	    </div>
+	  </div>
+	  <div class="pure-u-1-4">
+	    <div class="element yellow">
+	      <img class="pure-img" src="Q3_hexahedron.png">
+	      <div class="label">
+		\( \mathrm{BDM}^\mathrm{f}_{1} \)
+	      </div>
+	    </div>
+	  </div>
+	  <div class="pure-u-1-4">
+	    <div class="element blue">
+	      <img class="pure-img" src="Q3_hexahedron.png">
+	      <div class="label">
+		\( \mathrm{BDM}^\mathrm{f}_{1} \)
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<div class="pure-g">
+	  <div class="pure-u-1-4">
+	    <div class="element green">
+	      <img class="pure-img" src="Q3_hexahedron.png">
+	      <div class="label">
+		\( \mathrm{BDM}^\mathrm{f}_{1} \)
+	      </div>
+	    </div>
+	  </div>
+	  <div class="pure-u-1-4">
+	    <div class="element red">
+	      <img class="pure-img" src="Q3_hexahedron.png">
+	      <div class="label">
+		\( \mathrm{BDM}^\mathrm{f}_{1} \)
+	      </div>
+	    </div>
+	  </div>
+	  <div class="pure-u-1-4">
+	    <div class="element yellow">
+	      <img class="pure-img" src="Q3_hexahedron.png">
+	      <div class="label">
+		\( \mathrm{BDM}^\mathrm{f}_{1} \)
+	      </div>
+	    </div>
+	  </div>
+	  <div class="pure-u-1-4">
+	    <div class="element blue">
+	      <img class="pure-img" src="Q3_hexahedron.png">
+	      <div class="label">
+		\( \mathrm{BDM}^\mathrm{f}_{1} \)
+	      </div>
+	    </div>
+	  </div>
+	</div>
+      </div>
+      <div class="pure-u-1-24">
+	<!-- Blank -->
+      </div>
+      </div>
+      <div class="pure-u-1-24">
+      </div>
+      </div>
+      </div>
     </div>
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/bootswatch-dist/js/bootstrap.js"></script>
     <script src="bower_components/FitText.js/jquery.fittext.js"></script>
     <!-- endbower -->
     <!-- endbuild -->

@@ -2,7 +2,7 @@
   "name": "fe-table",
   "private": true,
   "dependencies": {
-    "bootswatch-dist": "3.2.0-yeti",
+    "pure": "~0.5.0",
     "FitText.js": "*"
   }
 }
