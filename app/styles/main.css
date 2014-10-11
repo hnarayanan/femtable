@@ -34,6 +34,11 @@
   font-family: 'Open Sans', sans-serif;
 }
 
+h1 {
+  font-family: 'Merriweather', serif;
+  color: #747066;
+}
+
 .element {
   margin: 3px;
   border-radius: 3px;
