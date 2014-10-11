@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 import os
 import jinja2
 
@@ -227,7 +229,7 @@ Pm = {
         "code": '("Ne1", tetrahedron, 1)',
         "code_alt": '()',
         "color": "red",
-        "citation": "Nédélec, Numer. Math. 35 (1980)"
+        "citation": u"Nédélec, Numer. Math. 35 (1980)"
     },
     "N1e2_tetrahedron": {
         "label": "\mathsf{N1}_\mathsf{2}^{\mathsf{e}}",
@@ -238,7 +240,7 @@ Pm = {
         "code": '("Ne1", tetrahedron, 2)',
         "code_alt": '()',
         "color": "red",
-        "citation": "Nédélec, Numer. Math. 35 (1980)"
+        "citation": u"Nédélec, Numer. Math. 35 (1980)"
     },
     "N1e3_tetrahedron": {
         "label": "\mathsf{N1}_\mathsf{3}^{\mathsf{e}}",
@@ -249,7 +251,7 @@ Pm = {
         "code": '("Ne1", tetrahedron, 3)',
         "code_alt": '()',
         "color": "red",
-        "citation": "Nédélec, Numer. Math. 35 (1980)"
+        "citation": u"Nédélec, Numer. Math. 35 (1980)"
     },
     "N1f1_tetrahedron": {
         "label": "\mathsf{N1}_\mathsf{1}^{\mathsf{f}}",
@@ -260,7 +262,7 @@ Pm = {
         "code": '("Nf1", tetrahedron, 1)',
         "code_alt": '()',
         "color": "yellow",
-        "citation": "Nédélec, Numer. Math. 35 (1980)"
+        "citation": u"Nédélec, Numer. Math. 35 (1980)"
     },
     "N1f2_tetrahedron": {
         "label": "\mathsf{N1}_\mathsf{2}^{\mathsf{f}}",
@@ -271,7 +273,7 @@ Pm = {
         "code": '("Nf1", tetrahedron, 2)',
         "code_alt": '()',
         "color": "yellow",
-        "citation": "Nédélec, Numer. Math. 35 (1980)"
+        "citation": u"Nédélec, Numer. Math. 35 (1980)"
     },
     "N1f3_tetrahedron": {
         "label": "\mathsf{N1}_\mathsf{3}^{\mathsf{f}}",
@@ -282,7 +284,7 @@ Pm = {
         "code": '("Nf1", tetrahedron, 3)',
         "code_alt": '()',
         "color": "yellow",
-        "citation": "Nédélec, Numer. Math. 35 (1980)"
+        "citation": u"Nédélec, Numer. Math. 35 (1980)"
     },
     "dP0_tetrahedron": {
         "label": "\mathsf{dP}_\mathsf{0}",
@@ -337,12 +339,12 @@ table_data = { "table" : [
         ],
         # n = 3
         [
-            [Pm["P1_tetrahedron"], Pm["N1e1_tetrahedron.png"], Pm["N1f1_tetrahedron.png"], Pm["dP0_tetrahedron"]],
-            [Pm["P2_tetrahedron"], Pm["N1e2_tetrahedron.png"], Pm["N1f2_tetrahedron.png"], Pm["dP1_tetrahedron"]],
-            [Pm["P3_tetrahedron"], Pm["N1e3_tetrahedron.png"], Pm["N1f3_tetrahedron.png"], Pm["dP2_tetrahedron"]],
+            [Pm["P1_tetrahedron"], Pm["N1e1_tetrahedron"], Pm["N1f1_tetrahedron"], Pm["dP0_tetrahedron"]],
+            [Pm["P2_tetrahedron"], Pm["N1e2_tetrahedron"], Pm["N1f2_tetrahedron"], Pm["dP1_tetrahedron"]],
+            [Pm["P3_tetrahedron"], Pm["N1e3_tetrahedron"], Pm["N1f3_tetrahedron"], Pm["dP2_tetrahedron"]],
         ]
     ]
 ]}
 
-generated = table_template.render(table_data)
+generated = table_template.render(table_data).encode('utf8')
 print generated
