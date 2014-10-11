@@ -1,4 +1,4 @@
-jQuery('#responsive-title').fitText(1.9);
+jQuery('#responsive-title').fitText(2.4);
 
 MathJax.Hub.Config({
   messageStyle: 'none',

@@ -16,6 +16,7 @@
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="styles/side-menu.css">
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
   </head>
@@ -25,11 +26,38 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
+
+<div id="layout">
+    <!-- Menu toggle -->
+    <a href="#menu" id="menuLink" class="menu-link">
+        <!-- Hamburger icon -->
+        <span></span>
+    </a>
+
+    <div id="menu">
+        <div class="pure-menu pure-menu-open">
+            <a class="pure-menu-heading" href="#">femtable.org</a>
+
+            <ul>
+                <li><a href="#">The Table</a></li>
+                <li><a href="#">Legend</a></li>
+                <li><a href="#">Background</a></li>
+                <li><a href="#">Download PDF</a></li>
+                <li><a href="#">Credits</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="main">
+
+
+
     <div class="pure-g">
       <div class="pure-u-1-24">
 	<!-- Blank -->
       </div>
       <div class="pure-u-22-24">
+	<h1 id="responsive-title">Periodic Table of the Finite Elements</h1>
     <div class="pure-g">
       <div class="pure-u-1-24" style="background-color:#eee;">
 	<p class="the_k">[n & r<br> go here]</p>
@@ -1169,6 +1197,8 @@
       </div>
     </div>
 
+</div>
+
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
@@ -1192,6 +1222,7 @@
     <!-- endbuild -->
 
     <!-- build:js({app,.tmp}) scripts/main.js -->
+    <script src="scripts/ui.js"></script>
     <script src="scripts/main.js"></script>
     <!-- endbuild -->
 </body>
