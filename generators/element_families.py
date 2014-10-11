@@ -19,7 +19,7 @@ Pm = {
         "weight_functions": "\dof{2}{1}{0}{0}{1} \pl \dof{1}{0}{1}{1}{1} = 3",
         "exterior_calc": "\Pm{2}{0}{1}",
         "code": '("P", interval, 2)',
-        "code": '()',
+        "code_alt": '()',
         "code_alt": '',
         "color": "green",
         "citation": "Courant, Bull. Amer. Math. Soc. (1943)"
@@ -38,10 +38,10 @@ Pm = {
     "dP0_interval": {
         "label": "\mathsf{dP}_\mathsf{0}",
         "dimension": 1,
-        "image": "dP1_interval.png",
+        "image": "dP0_interval.png",
         "weight_functions": "\dof{1}{0}{0}{1}{1} = 1",
         "exterior_calc": "\Pm{1}{1}{1}",
-        "code": '("DG", interval, 0)',
+        "code": '("DP", interval, 0)',
         "code_alt": '()',
         "color": "blue",
         "citation": "Reed and Hill, Los Alamos Report LA-UR-73-479 (1973)"
@@ -52,8 +52,8 @@ Pm = {
         "image": "dP1_interval.png",
         "weight_functions": "\dof{1}{1}{0}{1}{2} = 2",
         "exterior_calc": "\Pm{2}{1}{1}",
-        "code": '()',
-        "code_alt": '("DG", interval, 1)',
+        "code": '("DP", interval, 1)',
+        "code_alt": '()',
         "color": "blue",
         "citation": "Reed and Hill, Los Alamos Report LA-UR-73-479 (1973)"
     },
@@ -63,7 +63,7 @@ Pm = {
         "image": "dP2_interval.png",
         "weight_functions": "\dof{1}{2}{0}{1}{3} = 3",
         "exterior_calc": "\Pm{3}{1}{1}",
-        "code": '("DG", 2, interval)',
+        "code": '("DP", 2, interval)',
         "code_alt": '()',
         "color": "blue",
         "citation": "Reed and Hill, Los Alamos Report LA-UR-73-479 (1973)"
@@ -140,7 +140,7 @@ Pm = {
         "image": "dP0_triangle.png",
         "weight_functions": "\dof{1}{0}{0}{2}{1} = 1",
         "exterior_calc": "\Pm{1}{2}{2}",
-        "code": '("DG", triangle, 0)',
+        "code": '("DP", triangle, 0)',
         "code_alt": '()',
         "color": "blue",
         "citation": "Reed and Hill, Los Alamos Report LA-UR-73-479 (1973)"
@@ -151,7 +151,7 @@ Pm = {
         "image": "dP1_triangle.png",
         "weight_functions": "\dof{1}{1}{0}{2}{3} = 3",
         "exterior_calc": "\Pm{2}{2}{2}",
-        "code": '("DG", triangle, 1)',
+        "code": '("DP", triangle, 1)',
         "code_alt": '()',
         "color": "blue",
         "citation": "Reed and Hill, Los Alamos Report LA-UR-73-479 (1973)"
@@ -162,7 +162,7 @@ Pm = {
         "image": "dP2_triangle.png",
         "weight_functions": "\dof{1}{2}{0}{2}{6} = 6",
         "exterior_calc": "\Pm{3}{2}{2}",
-        "code": '("DG", triangle, 2)',
+        "code": '("DP", triangle, 2)',
         "code_alt": '()',
         "color": "blue",
         "citation": "Reed and Hill, Los Alamos Report LA-UR-73-479 (1973)"
