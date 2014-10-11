@@ -33,10 +33,10 @@
                   {% for element in row %}
 		  <div class="pure-u-1-4">
                     {% if element %}
-		    <div class="element green">
-		      <img class="pure-img" src="images/small/P3_interval.png" alt="">
+		    <div class="element {{element.color}}">
+		      <img class="pure-img" src="images/small/{{element.image}}" alt="{{element.label}} Element">
 		      <div class="label">
-			\( \mathsf{P}_\mathsf{3} \)
+			\( {{element.label}} \)
 		      </div>
 		    </div>
 		    {% endif %}

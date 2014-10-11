@@ -6,7 +6,7 @@ templates = jinja2.Environment(loader=loader)
 
 element = templates.get_template("table.html")
 
-elements = {
+all_elements = {
     "P1_tetrahedron": {
         "label": "\mathsf{P}_\mathsf{1}",
         "dimension": 4,
@@ -21,45 +21,87 @@ elements = {
 }
 
 
+_ = all_elements
 finite_element_table = { "table" : [
+    # P- Family
     [
         [
-            ["P1_interval", "dP0_interval", None, None],
-            ["P2_interval", "dP1_interval", None, None],
-            ["P3_interval", "dP2_interval", None, None],
+            [_["P1_tetrahedron"], _["P1_tetrahedron"], None, None],
+            [_["P1_tetrahedron"], _["P1_tetrahedron"], None, None],
+            [_["P1_tetrahedron"], _["P1_tetrahedron"], None, None],
+
         ],
         [
-            ["P1_triangle", "RT1_triangle", "dP0_triangle", None],
-            ["P2_triangle", "RT2_triangle", "dP1_triangle", None],
-            ["P3_triangle", "RT3_triangle", "dP2_triangle", None]
+            [_["P1_tetrahedron"], _["P1_tetrahedron"], _["P1_tetrahedron"], None],
+            [_["P1_tetrahedron"], _["P1_tetrahedron"], _["P1_tetrahedron"], None],
+            [_["P1_tetrahedron"], _["P1_tetrahedron"], _["P1_tetrahedron"], None],
         ],
         [
-            ["P1_tetrahedron", "N11e_tetrahedron", "N11f_tetrahedron", "dP0_tetrahedron"],
-            ["P2_tetrahedron", "N12e_tetrahedron", "N12f_tetrahedron", "dP1_tetrahedron"],
-            ["P3_tetrahedron", "N13e_tetrahedron", "N13f_tetrahedron", "dP2_tetrahedron"]
-        ],
+            [_["P1_tetrahedron"], _["P1_tetrahedron"], _["P1_tetrahedron"], _["P1_tetrahedron"]],
+            [_["P1_tetrahedron"], _["P1_tetrahedron"], _["P1_tetrahedron"], _["P1_tetrahedron"]],
+            [_["P1_tetrahedron"], _["P1_tetrahedron"], _["P1_tetrahedron"], _["P1_tetrahedron"]],
+        ]
     ],
+    # P Family
     [
         [
-            ["P1_interval", "dP0_interval", None, None],
-            ["P2_interval", "dP1_interval", None, None],
-            ["P3_interval", "dP2_interval", None, None],
+            [_["P1_tetrahedron"], _["P1_tetrahedron"], None, None],
+            [_["P1_tetrahedron"], _["P1_tetrahedron"], None, None],
+            [_["P1_tetrahedron"], _["P1_tetrahedron"], None, None],
+
         ],
         [
-            ["P1_triangle", "RT1_triangle", "dP0_triangle", None],
-            ["P2_triangle", "RT2_triangle", "dP1_triangle", None],
-            ["P3_triangle", "RT3_triangle", "dP2_triangle", None]
+            [_["P1_tetrahedron"], _["P1_tetrahedron"], _["P1_tetrahedron"], None],
+            [_["P1_tetrahedron"], _["P1_tetrahedron"], _["P1_tetrahedron"], None],
+            [_["P1_tetrahedron"], _["P1_tetrahedron"], _["P1_tetrahedron"], None],
         ],
         [
-            ["P1_tetrahedron", "N11e_tetrahedron", "N11f_tetrahedron", "dP0_tetrahedron"],
-            ["P2_tetrahedron", "N12e_tetrahedron", "N12f_tetrahedron", "dP1_tetrahedron"],
-            ["P3_tetrahedron", "N13e_tetrahedron", "N13f_tetrahedron", "dP2_tetrahedron"]
-        ],
+            [_["P1_tetrahedron"], _["P1_tetrahedron"], _["P1_tetrahedron"], _["P1_tetrahedron"]],
+            [_["P1_tetrahedron"], _["P1_tetrahedron"], _["P1_tetrahedron"], _["P1_tetrahedron"]],
+            [_["P1_tetrahedron"], _["P1_tetrahedron"], _["P1_tetrahedron"], _["P1_tetrahedron"]],
+        ]
     ],
+    # Q- Family
+    [
+        [
+            [_["P1_tetrahedron"], _["P1_tetrahedron"], None, None],
+            [_["P1_tetrahedron"], _["P1_tetrahedron"], None, None],
+            [_["P1_tetrahedron"], _["P1_tetrahedron"], None, None],
+
+        ],
+        [
+            [_["P1_tetrahedron"], _["P1_tetrahedron"], _["P1_tetrahedron"], None],
+            [_["P1_tetrahedron"], _["P1_tetrahedron"], _["P1_tetrahedron"], None],
+            [_["P1_tetrahedron"], _["P1_tetrahedron"], _["P1_tetrahedron"], None],
+        ],
+        [
+            [_["P1_tetrahedron"], _["P1_tetrahedron"], _["P1_tetrahedron"], _["P1_tetrahedron"]],
+            [_["P1_tetrahedron"], _["P1_tetrahedron"], _["P1_tetrahedron"], _["P1_tetrahedron"]],
+            [_["P1_tetrahedron"], _["P1_tetrahedron"], _["P1_tetrahedron"], _["P1_tetrahedron"]],
+        ]
+    ],
+    # S Family
+    [
+        [
+            [_["P1_tetrahedron"], _["P1_tetrahedron"], None, None],
+            [_["P1_tetrahedron"], _["P1_tetrahedron"], None, None],
+            [_["P1_tetrahedron"], _["P1_tetrahedron"], None, None],
+
+        ],
+        [
+            [_["P1_tetrahedron"], _["P1_tetrahedron"], _["P1_tetrahedron"], None],
+            [_["P1_tetrahedron"], _["P1_tetrahedron"], _["P1_tetrahedron"], None],
+            [_["P1_tetrahedron"], _["P1_tetrahedron"], _["P1_tetrahedron"], None],
+        ],
+        [
+            [_["P1_tetrahedron"], _["P1_tetrahedron"], _["P1_tetrahedron"], _["P1_tetrahedron"]],
+            [_["P1_tetrahedron"], _["P1_tetrahedron"], _["P1_tetrahedron"], _["P1_tetrahedron"]],
+            [_["P1_tetrahedron"], _["P1_tetrahedron"], _["P1_tetrahedron"], _["P1_tetrahedron"]],
+        ]
+    ]
 ]}
 
 generated = element.render(finite_element_table)
-
 print generated
 
 
