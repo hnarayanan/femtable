@@ -31,12 +31,14 @@
 }
 
 * {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
 h1 {
   font-family: 'Merriweather', serif;
+  font-weight: 900;
   color: #747066;
+  line-height: 0.8em;
 }
 
 .element {
