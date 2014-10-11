@@ -8,18 +8,6 @@ templates = jinja2.Environment(loader=loader)
 table_template = templates.get_template("table.html")
 
 
-    # "": {
-    #     "label": "",
-    #     "dimension": ,
-    #     "image": "",
-    #     "weight_functions": "",
-    #     "exterior_calc": "",
-    #     "code": '()',
-    #     "code_alt": '()',
-    #     "color": "",
-    #     "citation": ""
-    # },
-
 Pm = {
     "P1_interval": {
         "label": "\mathsf{P}_\mathsf{1}",
@@ -124,7 +112,7 @@ Pm = {
     "RT1_triangle": {
         "label": "\mathsf{RT}_\mathsf{1}^{\mathsf{[e/f]}}",
         "dimension": 3,
-        "image": "RT1_triangle.png",
+        "image": "placeholder-square.png",
         "weight_functions": "\dof{3}{0}{0}{1}{1} = 3",
         "exterior_calc": "\Pm{1}{1}{2}",
         "code": '("RT[e,f]", triangle, 1)',
@@ -135,7 +123,7 @@ Pm = {
     "RT2_triangle": {
         "label": "\mathsf{RT}_\mathsf{2}^{\mathsf{[e/f]}}",
         "dimension": 8,
-        "image": "RT2_triangle.png",
+        "image": "placeholder-square.png",
         "weight_functions": "\dof{3}{1}{0}{1}{2} \pl \dof{1}{0}{1}{2}{2} = 8",
         "exterior_calc": "\Pm{2}{1}{2}",
         "code": '("RT[e,f]", triangle, 2)',
@@ -146,7 +134,7 @@ Pm = {
     "RT3_triangle": {
         "label": "\mathsf{RT}_\mathsf{3}^{\mathsf{[e/f]}}",
         "dimension": 15,
-        "image": "RT3_triangle.png",
+        "image": "placeholder-square.png",
         "weight_functions": "$\dof{3}{2}{0}{1}{3} \pl \dof{1}{1}{1}{2}{6} = 15$",
         "exterior_calc": "\Pm{3}{1}{2}",
         "code": '("RT[e,f]", triangle, 3)',
