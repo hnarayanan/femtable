@@ -4,7 +4,7 @@ import jinja2
 loader = jinja2.FileSystemLoader(os.path.join(os.path.dirname(__file__), "templates"))
 templates = jinja2.Environment(loader=loader)
 
-element = templates.get_template("element.html")
+element = templates.get_template("table.html")
 
 elements = {
     "P1_tetrahedron": {
@@ -20,7 +20,45 @@ elements = {
     }
 }
 
-generated = element.render(elements["P1_tetrahedron"])
+
+finite_element_table = { "table" : [
+    [
+        [
+            ["P1_interval", "dP0_interval", None, None],
+            ["P2_interval", "dP1_interval", None, None],
+            ["P3_interval", "dP2_interval", None, None],
+        ],
+        [
+            ["P1_triangle", "RT1_triangle", "dP0_triangle", None],
+            ["P2_triangle", "RT2_triangle", "dP1_triangle", None],
+            ["P3_triangle", "RT3_triangle", "dP2_triangle", None]
+        ],
+        [
+            ["P1_tetrahedron", "N11e_tetrahedron", "N11f_tetrahedron", "dP0_tetrahedron"],
+            ["P2_tetrahedron", "N12e_tetrahedron", "N12f_tetrahedron", "dP1_tetrahedron"],
+            ["P3_tetrahedron", "N13e_tetrahedron", "N13f_tetrahedron", "dP2_tetrahedron"]
+        ],
+    ],
+    [
+        [
+            ["P1_interval", "dP0_interval", None, None],
+            ["P2_interval", "dP1_interval", None, None],
+            ["P3_interval", "dP2_interval", None, None],
+        ],
+        [
+            ["P1_triangle", "RT1_triangle", "dP0_triangle", None],
+            ["P2_triangle", "RT2_triangle", "dP1_triangle", None],
+            ["P3_triangle", "RT3_triangle", "dP2_triangle", None]
+        ],
+        [
+            ["P1_tetrahedron", "N11e_tetrahedron", "N11f_tetrahedron", "dP0_tetrahedron"],
+            ["P2_tetrahedron", "N12e_tetrahedron", "N12f_tetrahedron", "dP1_tetrahedron"],
+            ["P3_tetrahedron", "N13e_tetrahedron", "N13f_tetrahedron", "dP2_tetrahedron"]
+        ],
+    ],
+]}
+
+generated = element.render(finite_element_table)
 
 print generated
 
@@ -58,45 +96,3 @@ print generated
     #     "code": ''
     # },
 #}
-
-
-# for element in elements:
-#     print """
-#       <!-- %(id)s detail  -->
-#       <div class="modal fade" id="%(id)s" tabindex="-1" role="dialog">
-#         <div class="modal-dialog">
-#           <div class="modal-content %(color)s">
-#             <div class="modal-body">
-#               <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-#               <div class="row">
-#                 <div class="col-xs-10">
-#                   <img src="images/large/%(id)s.png" alt="%(id)s element" class="img-responsive">
-#                 </div>
-#                 <div class="col-xs-2">
-#                   <p class="text-left"><strong>%(dimension)d</strong></p>
-#                 </div>
-#               </div>
-#               <div class="row">
-#                 <div class="col-xs-6">
-#                   <p>$$%(symbol)s$$</p>
-#                 </div>
-#                 <div class="col-xs-6">
-#                   <p>$$%(exterior_calc)s$$</p>
-#                 </div>
-#               </div>
-#               <hr>
-#               <div class="row">
-#                 <div class="col-xs-12">
-#                   <p>$$%(weight_functions)s$$</p>
-#                 </div>
-#               </div>
-#               <hr>
-#               <div class="row">
-#                 <div class="col-xs-12">
-#                   <p class="text-center"><code>%(code)s</code></p>
-#                 </div>
-#               </div>
-#             </div>
-#           </div>
-#         </div>
-#       </div>""" % element
