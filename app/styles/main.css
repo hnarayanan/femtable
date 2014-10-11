@@ -5,7 +5,6 @@
   padding: 0.2em 0;
 }
 
-
 .red {
   background-color: #ef625b;
 }
@@ -58,19 +57,10 @@ h1 {
   margin-left: 8px;
 }
 
-/* .modal-content { */
-/*   font-size: 120%; */
-/* } */
+.modal-content {
+  font-size: 200%;
+}
 
-/* code { */
-/*   color: black; */
-/*   background-color: inherit; */
-/* } */
-
-/* .divider { */
-/*   margin-bottom: 4px; */
-/*   padding-bottom: 4px; */
-/*   border-bottom: solid 1px #ddd; */
-/* } */
-
-
+.center {
+  text-align: center;
+}
