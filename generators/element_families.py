@@ -149,7 +149,7 @@ Pm = {
         "label": "\mathsf{dP}_\mathsf{1}",
         "dimension": 3,
         "image": "dP1_triangle.png",
-        "weight_functions": "\dof{1}{1}{0}{2}{3} = 3$",
+        "weight_functions": "\dof{1}{1}{0}{2}{3} = 3",
         "exterior_calc": "\Pm{2}{2}{2}",
         "code": '("DG", triangle, 1)',
         "code_alt": '()',

@@ -31,7 +31,7 @@
 		{% for row in dimension %}
 		<div class="pure-g">
                   {% for element in row %}
-		  <div class="pure-u-1-4">
+		  <div class="pure-u-1-4" data-toggle="modal" data-target="#{{element.image|replace(".png", "")}}">
                     {% if element %}
 		    <div class="element {{element.color}}">
 		      <img class="pure-img" src="images/small/{{element.image}}" alt="{{element.label}} Element">
