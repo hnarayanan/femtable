@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-Pm = {
+P = {
     "P1_interval": {
         "label": "\mathsf{P}_{\mathsf{1}}",
         "dimension": 2,

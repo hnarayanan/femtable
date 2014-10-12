@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-Pm = {
+Qm = {
     "Q1_interval": {
         "label": "\mathsf{Q}_{\mathsf{1}}",
         "dimension": 2,

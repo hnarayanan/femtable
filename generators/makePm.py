@@ -124,7 +124,7 @@ def citation(n, k):
     else:
         return 'ERROR'
     
-c = '# -*- coding: utf-8 -*-\n\nPm = {\n'
+c = '# -*- coding: utf-8 -*-\n\n' + feecsymb + ' = {\n'
 
 for n in range(1, 4):
     for k in range(0, n+1):
