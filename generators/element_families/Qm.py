@@ -1,0 +1,301 @@
+# -*- coding: utf-8 -*-
+
+Pm = {
+    "Q1_interval": {
+        "label": "\mathsf{Q}_{\mathsf{1}}",
+        "dimension": 2,
+        "image": "Q1_interval.png",
+        "weight_functions": "\dof{2}{0}{0}{0}{1} = 2",
+        "exterior_calc": "\Qm{1}{0}{1}",
+        "code": '("Q", interval, 1)',
+        "code_alt": '("Q-", interval, 1, 0)',
+        "color": "green",
+        "citation": "Courant, Bull. Amer. Math. Soc. (1943)"
+    },
+    "Q2_interval": {
+        "label": "\mathsf{Q}_{\mathsf{2}}",
+        "dimension": 3,
+        "image": "Q2_interval.png",
+        "weight_functions": "\dof{2}{1}{0}{0}{1} \pl \dof{1}{1}{1}{1}{1} = 3",
+        "exterior_calc": "\Qm{2}{0}{1}",
+        "code": '("Q", interval, 2)',
+        "code_alt": '("Q-", interval, 2, 0)',
+        "color": "green",
+        "citation": "Courant, Bull. Amer. Math. Soc. (1943)"
+    },
+    "Q3_interval": {
+        "label": "\mathsf{Q}_{\mathsf{3}}",
+        "dimension": 4,
+        "image": "Q3_interval.png",
+        "weight_functions": "\dof{2}{2}{0}{0}{1} \pl \dof{1}{2}{1}{1}{2} = 4",
+        "exterior_calc": "\Qm{3}{0}{1}",
+        "code": '("Q", interval, 3)',
+        "code_alt": '("Q-", interval, 3, 0)',
+        "color": "green",
+        "citation": "Courant, Bull. Amer. Math. Soc. (1943)"
+    },
+    "dQ0_interval": {
+        "label": "\mathsf{dQ}_{\mathsf{0}}",
+        "dimension": 1,
+        "image": "dQ0_interval.png",
+        "weight_functions": "\dof{1}{0}{0}{1}{1} = 1",
+        "exterior_calc": "\Qm{1}{1}{1}",
+        "code": '("DQ", interval, 0)',
+        "code_alt": '("Q-", interval, 1, 1)',
+        "color": "blue",
+        "citation": ""
+    },
+    "dQ1_interval": {
+        "label": "\mathsf{dQ}_{\mathsf{1}}",
+        "dimension": 2,
+        "image": "dQ1_interval.png",
+        "weight_functions": "\dof{1}{1}{0}{1}{2} = 2",
+        "exterior_calc": "\Qm{2}{1}{1}",
+        "code": '("DQ", interval, 1)',
+        "code_alt": '("Q-", interval, 2, 1)',
+        "color": "blue",
+        "citation": ""
+    },
+    "dQ2_interval": {
+        "label": "\mathsf{dQ}_{\mathsf{2}}",
+        "dimension": 3,
+        "image": "dQ2_interval.png",
+        "weight_functions": "\dof{1}{2}{0}{1}{3} = 3",
+        "exterior_calc": "\Qm{3}{1}{1}",
+        "code": '("DQ", interval, 2)',
+        "code_alt": '("Q-", interval, 3, 1)',
+        "color": "blue",
+        "citation": ""
+    },
+    "Q1_quadrilateral": {
+        "label": "\mathsf{Q}_{\mathsf{1}}",
+        "dimension": 4,
+        "image": "Q1_quadrilateral.png",
+        "weight_functions": "\dof{4}{0}{0}{0}{1} = 4",
+        "exterior_calc": "\Qm{1}{0}{2}",
+        "code": '("Q", quadrilateral, 1)',
+        "code_alt": '("Q-", quadrilateral, 1, 0)',
+        "color": "green",
+        "citation": "Courant, Bull. Amer. Math. Soc. (1943)"
+    },
+    "Q2_quadrilateral": {
+        "label": "\mathsf{Q}_{\mathsf{2}}",
+        "dimension": 9,
+        "image": "Q2_quadrilateral.png",
+        "weight_functions": "\dof{4}{1}{0}{0}{1} \pl \dof{4}{1}{1}{1}{1} \pl \dof{1}{1}{2}{2}{1} = 9",
+        "exterior_calc": "\Qm{2}{0}{2}",
+        "code": '("Q", quadrilateral, 2)',
+        "code_alt": '("Q-", quadrilateral, 2, 0)',
+        "color": "green",
+        "citation": "Courant, Bull. Amer. Math. Soc. (1943)"
+    },
+    "Q3_quadrilateral": {
+        "label": "\mathsf{Q}_{\mathsf{3}}",
+        "dimension": 16,
+        "image": "Q3_quadrilateral.png",
+        "weight_functions": "\dof{4}{2}{0}{0}{1} \pl \dof{4}{2}{1}{1}{2} \pl \dof{1}{2}{2}{2}{4} = 16",
+        "exterior_calc": "\Qm{3}{0}{2}",
+        "code": '("Q", quadrilateral, 3)',
+        "code_alt": '("Q-", quadrilateral, 3, 0)',
+        "color": "green",
+        "citation": "Courant, Bull. Amer. Math. Soc. (1943)"
+    },
+    "RTc1_quadrilateral": {
+        "label": "\mathsf{RTc}^{\mathsf{[e/f]}}_{\mathsf{1}}",
+        "dimension": 4,
+        "image": "placeholder-square.png",
+        "weight_functions": "\dof{4}{0}{0}{1}{1} = 4",
+        "exterior_calc": "\Qm{1}{1}{2}",
+        "code": '("RTC[E,F]", quadrilateral, 1)',
+        "code_alt": '("Q-", quadrilateral, 1, 1)',
+        "color": "orange",
+        "citation": "Raviart and Thomas, Lecture Notes in Math. 606 (1977)"
+    },
+    "RTc2_quadrilateral": {
+        "label": "\mathsf{RTc}^{\mathsf{[e/f]}}_{\mathsf{2}}",
+        "dimension": 12,
+        "image": "placeholder-square.png",
+        "weight_functions": "\dof{4}{1}{0}{1}{2} \pl \dof{1}{1}{1}{2}{4} = 12",
+        "exterior_calc": "\Qm{2}{1}{2}",
+        "code": '("RTC[E,F]", quadrilateral, 2)',
+        "code_alt": '("Q-", quadrilateral, 2, 1)',
+        "color": "orange",
+        "citation": "Raviart and Thomas, Lecture Notes in Math. 606 (1977)"
+    },
+    "RTc3_quadrilateral": {
+        "label": "\mathsf{RTc}^{\mathsf{[e/f]}}_{\mathsf{3}}",
+        "dimension": 24,
+        "image": "placeholder-square.png",
+        "weight_functions": "\dof{4}{2}{0}{1}{3} \pl \dof{1}{2}{1}{2}{12} = 24",
+        "exterior_calc": "\Qm{3}{1}{2}",
+        "code": '("RTC[E,F]", quadrilateral, 3)',
+        "code_alt": '("Q-", quadrilateral, 3, 1)',
+        "color": "orange",
+        "citation": "Raviart and Thomas, Lecture Notes in Math. 606 (1977)"
+    },
+    "dQ0_quadrilateral": {
+        "label": "\mathsf{dQ}_{\mathsf{0}}",
+        "dimension": 1,
+        "image": "dQ0_quadrilateral.png",
+        "weight_functions": "\dof{1}{0}{0}{2}{1} = 1",
+        "exterior_calc": "\Qm{1}{2}{2}",
+        "code": '("DQ", quadrilateral, 0)',
+        "code_alt": '("Q-", quadrilateral, 1, 2)',
+        "color": "blue",
+        "citation": ""
+    },
+    "dQ1_quadrilateral": {
+        "label": "\mathsf{dQ}_{\mathsf{1}}",
+        "dimension": 4,
+        "image": "dQ1_quadrilateral.png",
+        "weight_functions": "\dof{1}{1}{0}{2}{4} = 4",
+        "exterior_calc": "\Qm{2}{2}{2}",
+        "code": '("DQ", quadrilateral, 1)',
+        "code_alt": '("Q-", quadrilateral, 2, 2)',
+        "color": "blue",
+        "citation": ""
+    },
+    "dQ2_quadrilateral": {
+        "label": "\mathsf{dQ}_{\mathsf{2}}",
+        "dimension": 9,
+        "image": "dQ2_quadrilateral.png",
+        "weight_functions": "\dof{1}{2}{0}{2}{9} = 9",
+        "exterior_calc": "\Qm{3}{2}{2}",
+        "code": '("DQ", quadrilateral, 2)',
+        "code_alt": '("Q-", quadrilateral, 3, 2)',
+        "color": "blue",
+        "citation": ""
+    },
+    "Q1_hexahedron": {
+        "label": "\mathsf{Q}_{\mathsf{1}}",
+        "dimension": 8,
+        "image": "Q1_hexahedron.png",
+        "weight_functions": "\dof{8}{0}{0}{0}{1} = 8",
+        "exterior_calc": "\Qm{1}{0}{3}",
+        "code": '("Q", hexahedron, 1)',
+        "code_alt": '("Q-", hexahedron, 1, 0)',
+        "color": "green",
+        "citation": "Courant, Bull. Amer. Math. Soc. (1943)"
+    },
+    "Q2_hexahedron": {
+        "label": "\mathsf{Q}_{\mathsf{2}}",
+        "dimension": 27,
+        "image": "Q2_hexahedron.png",
+        "weight_functions": "\dof{8}{1}{0}{0}{1} \pl \dof{12}{1}{1}{1}{1} \pl \dof{6}{1}{2}{2}{1} \pl \dof{1}{1}{3}{3}{1} = 27",
+        "exterior_calc": "\Qm{2}{0}{3}",
+        "code": '("Q", hexahedron, 2)',
+        "code_alt": '("Q-", hexahedron, 2, 0)',
+        "color": "green",
+        "citation": "Courant, Bull. Amer. Math. Soc. (1943)"
+    },
+    "Q3_hexahedron": {
+        "label": "\mathsf{Q}_{\mathsf{3}}",
+        "dimension": 64,
+        "image": "Q3_hexahedron.png",
+        "weight_functions": "\dof{8}{2}{0}{0}{1} \pl \dof{12}{2}{1}{1}{2} \pl \dof{6}{2}{2}{2}{4} \pl \dof{1}{2}{3}{3}{8} = 64",
+        "exterior_calc": "\Qm{3}{0}{3}",
+        "code": '("Q", hexahedron, 3)',
+        "code_alt": '("Q-", hexahedron, 3, 0)',
+        "color": "green",
+        "citation": "Courant, Bull. Amer. Math. Soc. (1943)"
+    },
+    "Nce1_hexahedron": {
+        "label": "\mathsf{Nc}^{\mathsf{e}}_{\mathsf{1}}",
+        "dimension": 12,
+        "image": "Nce1_hexahedron.png",
+        "weight_functions": "\dof{12}{0}{0}{1}{1} = 12",
+        "exterior_calc": "\Qm{1}{1}{3}",
+        "code": '("NCE", hexahedron, 1)',
+        "code_alt": '("Q-", hexahedron, 1, 1)',
+        "color": "red",
+        "citation": u"Nédélec, Numer. Math. 35 (1980)"
+    },
+    "Nce2_hexahedron": {
+        "label": "\mathsf{Nc}^{\mathsf{e}}_{\mathsf{2}}",
+        "dimension": 54,
+        "image": "Nce2_hexahedron.png",
+        "weight_functions": "\dof{12}{1}{0}{1}{2} \pl \dof{6}{1}{1}{2}{4} \pl \dof{1}{1}{2}{3}{6} = 54",
+        "exterior_calc": "\Qm{2}{1}{3}",
+        "code": '("NCE", hexahedron, 2)',
+        "code_alt": '("Q-", hexahedron, 2, 1)',
+        "color": "red",
+        "citation": u"Nédélec, Numer. Math. 35 (1980)"
+    },
+    "Nce3_hexahedron": {
+        "label": "\mathsf{Nc}^{\mathsf{e}}_{\mathsf{3}}",
+        "dimension": 144,
+        "image": "Nce3_hexahedron.png",
+        "weight_functions": "\dof{12}{2}{0}{1}{3} \pl \dof{6}{2}{1}{2}{12} \pl \dof{1}{2}{2}{3}{36} = 144",
+        "exterior_calc": "\Qm{3}{1}{3}",
+        "code": '("NCE", hexahedron, 3)',
+        "code_alt": '("Q-", hexahedron, 3, 1)',
+        "color": "red",
+        "citation": u"Nédélec, Numer. Math. 35 (1980)"
+    },
+    "Ncf1_hexahedron": {
+        "label": "\mathsf{Nc}^{\mathsf{f}}_{\mathsf{1}}",
+        "dimension": 6,
+        "image": "Ncf1_hexahedron.png",
+        "weight_functions": "\dof{6}{0}{0}{2}{1} = 6",
+        "exterior_calc": "\Qm{1}{2}{3}",
+        "code": '("NCF", hexahedron, 1)',
+        "code_alt": '("Q-", hexahedron, 1, 2)',
+        "color": "yellow",
+        "citation": u"Nédélec, Numer. Math. 35 (1980)"
+    },
+    "Ncf2_hexahedron": {
+        "label": "\mathsf{Nc}^{\mathsf{f}}_{\mathsf{2}}",
+        "dimension": 36,
+        "image": "Ncf2_hexahedron.png",
+        "weight_functions": "\dof{6}{1}{0}{2}{4} \pl \dof{1}{1}{1}{3}{12} = 36",
+        "exterior_calc": "\Qm{2}{2}{3}",
+        "code": '("NCF", hexahedron, 2)',
+        "code_alt": '("Q-", hexahedron, 2, 2)',
+        "color": "yellow",
+        "citation": u"Nédélec, Numer. Math. 35 (1980)"
+    },
+    "Ncf3_hexahedron": {
+        "label": "\mathsf{Nc}^{\mathsf{f}}_{\mathsf{3}}",
+        "dimension": 108,
+        "image": "Ncf3_hexahedron.png",
+        "weight_functions": "\dof{6}{2}{0}{2}{9} \pl \dof{1}{2}{1}{3}{54} = 108",
+        "exterior_calc": "\Qm{3}{2}{3}",
+        "code": '("NCF", hexahedron, 3)',
+        "code_alt": '("Q-", hexahedron, 3, 2)',
+        "color": "yellow",
+        "citation": u"Nédélec, Numer. Math. 35 (1980)"
+    },
+    "dQ0_hexahedron": {
+        "label": "\mathsf{dQ}_{\mathsf{0}}",
+        "dimension": 1,
+        "image": "dQ0_hexahedron.png",
+        "weight_functions": "\dof{1}{0}{0}{3}{1} = 1",
+        "exterior_calc": "\Qm{1}{3}{3}",
+        "code": '("DQ", hexahedron, 0)',
+        "code_alt": '("Q-", hexahedron, 1, 3)',
+        "color": "blue",
+        "citation": ""
+    },
+    "dQ1_hexahedron": {
+        "label": "\mathsf{dQ}_{\mathsf{1}}",
+        "dimension": 8,
+        "image": "dQ1_hexahedron.png",
+        "weight_functions": "\dof{1}{1}{0}{3}{8} = 8",
+        "exterior_calc": "\Qm{2}{3}{3}",
+        "code": '("DQ", hexahedron, 1)',
+        "code_alt": '("Q-", hexahedron, 2, 3)',
+        "color": "blue",
+        "citation": ""
+    },
+    "dQ2_hexahedron": {
+        "label": "\mathsf{dQ}_{\mathsf{2}}",
+        "dimension": 27,
+        "image": "dQ2_hexahedron.png",
+        "weight_functions": "\dof{1}{2}{0}{3}{27} = 27",
+        "exterior_calc": "\Qm{3}{3}{3}",
+        "code": '("DQ", hexahedron, 2)',
+        "code_alt": '("Q-", hexahedron, 3, 3)',
+        "color": "blue",
+        "citation": ""
+    }
+}

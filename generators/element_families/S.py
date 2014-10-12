@@ -1,0 +1,301 @@
+# -*- coding: utf-8 -*-
+
+Pm = {
+    "S1_interval": {
+        "label": "\mathsf{S}_{\mathsf{1}}",
+        "dimension": 2,
+        "image": "S1_interval.png",
+        "weight_functions": "\dof{2}{1}{0}{0}{1} = 2",
+        "exterior_calc": "\S{1}{0}{1}",
+        "code": '("S", interval, 1)',
+        "code_alt": '("S", interval, 1, 0)',
+        "color": "green",
+        "citation": ""
+    },
+    "S2_interval": {
+        "label": "\mathsf{S}_{\mathsf{2}}",
+        "dimension": 3,
+        "image": "S2_interval.png",
+        "weight_functions": "\dof{2}{2}{0}{0}{1} \pl \dof{1}{0}{1}{1}{1} = 3",
+        "exterior_calc": "\S{2}{0}{1}",
+        "code": '("S", interval, 2)',
+        "code_alt": '("S", interval, 2, 0)',
+        "color": "green",
+        "citation": ""
+    },
+    "S3_interval": {
+        "label": "\mathsf{S}_{\mathsf{3}}",
+        "dimension": 4,
+        "image": "S3_interval.png",
+        "weight_functions": "\dof{2}{3}{0}{0}{1} \pl \dof{1}{1}{1}{1}{2} = 4",
+        "exterior_calc": "\S{3}{0}{1}",
+        "code": '("S", interval, 3)',
+        "code_alt": '("S", interval, 3, 0)',
+        "color": "green",
+        "citation": ""
+    },
+    "dPc1_interval": {
+        "label": "\mathsf{dP}_{\mathsf{1}}",
+        "dimension": 2,
+        "image": "dPc1_interval.png",
+        "weight_functions": "\dof{1}{1}{0}{1}{2} = 2",
+        "exterior_calc": "\S{1}{1}{1}",
+        "code": '("DPC", interval, 1)',
+        "code_alt": '("S", interval, 1, 1)',
+        "color": "blue",
+        "citation": ""
+    },
+    "dPc2_interval": {
+        "label": "\mathsf{dP}_{\mathsf{2}}",
+        "dimension": 3,
+        "image": "dPc2_interval.png",
+        "weight_functions": "\dof{1}{2}{0}{1}{3} = 3",
+        "exterior_calc": "\S{2}{1}{1}",
+        "code": '("DPC", interval, 2)',
+        "code_alt": '("S", interval, 2, 1)',
+        "color": "blue",
+        "citation": ""
+    },
+    "dPc3_interval": {
+        "label": "\mathsf{dP}_{\mathsf{3}}",
+        "dimension": 4,
+        "image": "dPc3_interval.png",
+        "weight_functions": "\dof{1}{3}{0}{1}{4} = 4",
+        "exterior_calc": "\S{3}{1}{1}",
+        "code": '("DPC", interval, 3)',
+        "code_alt": '("S", interval, 3, 1)',
+        "color": "blue",
+        "citation": ""
+    },
+    "S1_quadrilateral": {
+        "label": "\mathsf{S}_{\mathsf{1}}",
+        "dimension": 4,
+        "image": "S1_quadrilateral.png",
+        "weight_functions": "\dof{4}{1}{0}{0}{1} = 4",
+        "exterior_calc": "\S{1}{0}{2}",
+        "code": '("S", quadrilateral, 1)',
+        "code_alt": '("S", quadrilateral, 1, 0)',
+        "color": "green",
+        "citation": ""
+    },
+    "S2_quadrilateral": {
+        "label": "\mathsf{S}_{\mathsf{2}}",
+        "dimension": 8,
+        "image": "S2_quadrilateral.png",
+        "weight_functions": "\dof{4}{2}{0}{0}{1} \pl \dof{4}{0}{1}{1}{1} = 8",
+        "exterior_calc": "\S{2}{0}{2}",
+        "code": '("S", quadrilateral, 2)',
+        "code_alt": '("S", quadrilateral, 2, 0)',
+        "color": "green",
+        "citation": ""
+    },
+    "S3_quadrilateral": {
+        "label": "\mathsf{S}_{\mathsf{3}}",
+        "dimension": 12,
+        "image": "S3_quadrilateral.png",
+        "weight_functions": "\dof{4}{3}{0}{0}{1} \pl \dof{4}{1}{1}{1}{2} = 12",
+        "exterior_calc": "\S{3}{0}{2}",
+        "code": '("S", quadrilateral, 3)',
+        "code_alt": '("S", quadrilateral, 3, 0)',
+        "color": "green",
+        "citation": ""
+    },
+    "BDMc1_quadrilateral": {
+        "label": "\mathsf{BDMc}^{\mathsf{[e/f]}}_{\mathsf{1}}",
+        "dimension": 8,
+        "image": "placeholder-square.png",
+        "weight_functions": "\dof{4}{1}{0}{1}{2} = 8",
+        "exterior_calc": "\S{1}{1}{2}",
+        "code": '("BDMC[E,F]", quadrilateral, 1)',
+        "code_alt": '("S", quadrilateral, 1, 1)',
+        "color": "orange",
+        "citation": "Brezzi, Douglas, and Marini, Numer. Math. 47 (1985)"
+    },
+    "BDMc2_quadrilateral": {
+        "label": "\mathsf{BDMc}^{\mathsf{[e/f]}}_{\mathsf{2}}",
+        "dimension": 14,
+        "image": "placeholder-square.png",
+        "weight_functions": "\dof{4}{2}{0}{1}{3} \pl \dof{1}{0}{1}{2}{2} = 14",
+        "exterior_calc": "\S{2}{1}{2}",
+        "code": '("BDMC[E,F]", quadrilateral, 2)',
+        "code_alt": '("S", quadrilateral, 2, 1)',
+        "color": "orange",
+        "citation": "Brezzi, Douglas, and Marini, Numer. Math. 47 (1985)"
+    },
+    "BDMc3_quadrilateral": {
+        "label": "\mathsf{BDMc}^{\mathsf{[e/f]}}_{\mathsf{3}}",
+        "dimension": 22,
+        "image": "placeholder-square.png",
+        "weight_functions": "\dof{4}{3}{0}{1}{4} \pl \dof{1}{1}{1}{2}{6} = 22",
+        "exterior_calc": "\S{3}{1}{2}",
+        "code": '("BDMC[E,F]", quadrilateral, 3)',
+        "code_alt": '("S", quadrilateral, 3, 1)',
+        "color": "orange",
+        "citation": "Brezzi, Douglas, and Marini, Numer. Math. 47 (1985)"
+    },
+    "dPc1_quadrilateral": {
+        "label": "\mathsf{dP}_{\mathsf{1}}",
+        "dimension": 3,
+        "image": "dPc1_quadrilateral.png",
+        "weight_functions": "\dof{1}{1}{0}{2}{3} = 3",
+        "exterior_calc": "\S{1}{2}{2}",
+        "code": '("DPC", quadrilateral, 1)',
+        "code_alt": '("S", quadrilateral, 1, 2)',
+        "color": "blue",
+        "citation": ""
+    },
+    "dPc2_quadrilateral": {
+        "label": "\mathsf{dP}_{\mathsf{2}}",
+        "dimension": 6,
+        "image": "dPc2_quadrilateral.png",
+        "weight_functions": "\dof{1}{2}{0}{2}{6} = 6",
+        "exterior_calc": "\S{2}{2}{2}",
+        "code": '("DPC", quadrilateral, 2)',
+        "code_alt": '("S", quadrilateral, 2, 2)',
+        "color": "blue",
+        "citation": ""
+    },
+    "dPc3_quadrilateral": {
+        "label": "\mathsf{dP}_{\mathsf{3}}",
+        "dimension": 10,
+        "image": "dPc3_quadrilateral.png",
+        "weight_functions": "\dof{1}{3}{0}{2}{10} = 10",
+        "exterior_calc": "\S{3}{2}{2}",
+        "code": '("DPC", quadrilateral, 3)',
+        "code_alt": '("S", quadrilateral, 3, 2)',
+        "color": "blue",
+        "citation": ""
+    },
+    "S1_hexahedron": {
+        "label": "\mathsf{S}_{\mathsf{1}}",
+        "dimension": 8,
+        "image": "S1_hexahedron.png",
+        "weight_functions": "\dof{8}{1}{0}{0}{1} = 8",
+        "exterior_calc": "\S{1}{0}{3}",
+        "code": '("S", hexahedron, 1)',
+        "code_alt": '("S", hexahedron, 1, 0)',
+        "color": "green",
+        "citation": ""
+    },
+    "S2_hexahedron": {
+        "label": "\mathsf{S}_{\mathsf{2}}",
+        "dimension": 20,
+        "image": "S2_hexahedron.png",
+        "weight_functions": "\dof{8}{2}{0}{0}{1} \pl \dof{12}{0}{1}{1}{1} = 20",
+        "exterior_calc": "\S{2}{0}{3}",
+        "code": '("S", hexahedron, 2)',
+        "code_alt": '("S", hexahedron, 2, 0)',
+        "color": "green",
+        "citation": ""
+    },
+    "S3_hexahedron": {
+        "label": "\mathsf{S}_{\mathsf{3}}",
+        "dimension": 32,
+        "image": "S3_hexahedron.png",
+        "weight_functions": "\dof{8}{3}{0}{0}{1} \pl \dof{12}{1}{1}{1}{2} = 32",
+        "exterior_calc": "\S{3}{0}{3}",
+        "code": '("S", hexahedron, 3)',
+        "code_alt": '("S", hexahedron, 3, 0)',
+        "color": "green",
+        "citation": ""
+    },
+    "AAe1_hexahedron": {
+        "label": "\mathsf{AA}^{\mathsf{e}}_{\mathsf{1}}",
+        "dimension": 24,
+        "image": "AAe1_hexahedron.png",
+        "weight_functions": "\dof{12}{1}{0}{1}{2} = 24",
+        "exterior_calc": "\S{1}{1}{3}",
+        "code": '("AAE", hexahedron, 1)',
+        "code_alt": '("S", hexahedron, 1, 1)',
+        "color": "red",
+        "citation": "Arnold and Awanou, Math. Comp. 83 (2014)"
+    },
+    "AAe2_hexahedron": {
+        "label": "\mathsf{AA}^{\mathsf{e}}_{\mathsf{2}}",
+        "dimension": 48,
+        "image": "AAe2_hexahedron.png",
+        "weight_functions": "\dof{12}{2}{0}{1}{3} \pl \dof{6}{0}{1}{2}{2} = 48",
+        "exterior_calc": "\S{2}{1}{3}",
+        "code": '("AAE", hexahedron, 2)',
+        "code_alt": '("S", hexahedron, 2, 1)',
+        "color": "red",
+        "citation": "Arnold and Awanou, Math. Comp. 83 (2014)"
+    },
+    "AAe3_hexahedron": {
+        "label": "\mathsf{AA}^{\mathsf{e}}_{\mathsf{3}}",
+        "dimension": 84,
+        "image": "AAe3_hexahedron.png",
+        "weight_functions": "\dof{12}{3}{0}{1}{4} \pl \dof{6}{1}{1}{2}{6} = 84",
+        "exterior_calc": "\S{3}{1}{3}",
+        "code": '("AAE", hexahedron, 3)',
+        "code_alt": '("S", hexahedron, 3, 1)',
+        "color": "red",
+        "citation": "Arnold and Awanou, Math. Comp. 83 (2014)"
+    },
+    "AAf1_hexahedron": {
+        "label": "\mathsf{AA}^{\mathsf{f}}_{\mathsf{1}}",
+        "dimension": 18,
+        "image": "AAf1_hexahedron.png",
+        "weight_functions": "\dof{6}{1}{0}{2}{3} = 18",
+        "exterior_calc": "\S{1}{2}{3}",
+        "code": '("AAF", hexahedron, 1)',
+        "code_alt": '("S", hexahedron, 1, 2)',
+        "color": "yellow",
+        "citation": "Arnold and Awanou, Math. Comp. 83 (2014)"
+    },
+    "AAf2_hexahedron": {
+        "label": "\mathsf{AA}^{\mathsf{f}}_{\mathsf{2}}",
+        "dimension": 39,
+        "image": "AAf2_hexahedron.png",
+        "weight_functions": "\dof{6}{2}{0}{2}{6} \pl \dof{1}{0}{1}{3}{3} = 39",
+        "exterior_calc": "\S{2}{2}{3}",
+        "code": '("AAF", hexahedron, 2)',
+        "code_alt": '("S", hexahedron, 2, 2)',
+        "color": "yellow",
+        "citation": "Arnold and Awanou, Math. Comp. 83 (2014)"
+    },
+    "AAf3_hexahedron": {
+        "label": "\mathsf{AA}^{\mathsf{f}}_{\mathsf{3}}",
+        "dimension": 72,
+        "image": "AAf3_hexahedron.png",
+        "weight_functions": "\dof{6}{3}{0}{2}{10} \pl \dof{1}{1}{1}{3}{12} = 72",
+        "exterior_calc": "\S{3}{2}{3}",
+        "code": '("AAF", hexahedron, 3)',
+        "code_alt": '("S", hexahedron, 3, 2)',
+        "color": "yellow",
+        "citation": "Arnold and Awanou, Math. Comp. 83 (2014)"
+    },
+    "dPc1_hexahedron": {
+        "label": "\mathsf{dP}_{\mathsf{1}}",
+        "dimension": 4,
+        "image": "dPc1_hexahedron.png",
+        "weight_functions": "\dof{1}{1}{0}{3}{4} = 4",
+        "exterior_calc": "\S{1}{3}{3}",
+        "code": '("DPC", hexahedron, 1)',
+        "code_alt": '("S", hexahedron, 1, 3)',
+        "color": "blue",
+        "citation": ""
+    },
+    "dPc2_hexahedron": {
+        "label": "\mathsf{dP}_{\mathsf{2}}",
+        "dimension": 10,
+        "image": "dPc2_hexahedron.png",
+        "weight_functions": "\dof{1}{2}{0}{3}{10} = 10",
+        "exterior_calc": "\S{2}{3}{3}",
+        "code": '("DPC", hexahedron, 2)',
+        "code_alt": '("S", hexahedron, 2, 3)',
+        "color": "blue",
+        "citation": ""
+    },
+    "dPc3_hexahedron": {
+        "label": "\mathsf{dP}_{\mathsf{3}}",
+        "dimension": 20,
+        "image": "dPc3_hexahedron.png",
+        "weight_functions": "\dof{1}{3}{0}{3}{20} = 20",
+        "exterior_calc": "\S{3}{3}{3}",
+        "code": '("DPC", hexahedron, 3)',
+        "code_alt": '("S", hexahedron, 3, 3)',
+        "color": "blue",
+        "citation": ""
+    }
+}
