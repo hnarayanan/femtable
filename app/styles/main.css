@@ -64,3 +64,19 @@ h1 {
 .center {
   text-align: center;
 }
+
+.normal {
+  font-size: 80%;
+}
+
+.small {
+  font-size: 80%;
+}
+
+.tiny {
+  font-size: 60%;
+}
+
+.really-tiny {
+  font-size: 40%;
+}
