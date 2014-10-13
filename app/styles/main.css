@@ -94,6 +94,10 @@ h1 {
   margin-right:auto;
 }
 
+th, td {
+  text-align: right;
+}
+
 a {
   text-decoration: none;
 }
