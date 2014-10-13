@@ -88,3 +88,8 @@ h1 {
 .really-tiny {
   font-size: 40%;
 }
+
+.pure-table {
+  margin-left:auto;
+  margin-right:auto;
+}
