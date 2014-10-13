@@ -49,147 +49,169 @@
       </div>
 
       <div id="main">
-	<div class="pure-g">
-	  <div class="pure-u-1-24">
-	    <!-- Blank -->
-	  </div>
-	  <div class="pure-u-22-24">
-	    <h1 id="responsive-title">Periodic Table of the Finite Elements</h1>
-	    <h2>Background</h2>
-	    <h2>The Pm family</h2>
-	    <h2>The P family</h2>
-	    <h2>The Qm family</h2>
-	    <h2>The S family</h2>
-	    <table class="pure-table">
-	      <thead>
-		<tr>
-		  <th></th>
-		  <th></th>
-		  <th>r = 1</th>
-		  <th>r = 2</th>
-		  <th>r = 3</th>
-		  <th>r = 4</th>
-		  <th>r = 5</th>
-		  <th>r = 6</th>
-		  <th>r = 7</th>
-		</tr>
-	      </thead>
+        <div class="pure-g">
+          <div class="pure-u-1-24">
+            <!-- Blank -->
+          </div>
+          <div class="pure-u-22-24">
+            <h1 id="responsive-title">Periodic Table of the Finite Elements</h1>
+            <div class="pure-g">
+              <div class="pure-u-3-5">
+		<h2>Background</h2>
+		<p>The table presents the primary spaces of finite elements for the discretization of the fundamental operators of vector calculus: the gradient, curl, and divergence.  A finite element space is a space of piecewise polynomial functions on a domain determined by: (1) a mesh of the domain into polyhedral cells called \emph{elements,} (2) a finite dimensional space of polynomial functions on each element called the \emph{shape functions,} and (3) a unisolvent set of functionals on the shape functions of each element called \emph{degrees of freedom} (DOFs), each DOF being associated to a (generalized) face of the element, and specifying a quantity which takes a single value for all elements sharing the face.  The element diagrams depict the DOFs and their association to faces.</p>
+		<p>The spaces $\P_r^-\Lambda^k$ and $\P_r\Lambda^k$ depicted on the left half of the table are the two primary families of finite element spaces for meshes of simplices, and the spaces $\Q_r^-\Lambda^k$ and $\S_r\Lambda^k$ on the right side are for meshes of cubes or boxes. Each is defined in any dimension $n\ge 1$, for each value of the polynomial degree $r\ge 1$, and each value of $0 \leq k \leq n$.  The parameter $k$ refers to the operator: the spaces belong to the domain of the $k$th exterior derivative.  Thus for $k=0$, the spaces discretize the Sobolev space $H^1$, the domain of the gradient operator; for $k=1$, they discretize $H(\curl)$, the domain of the curl; for $k=n-1$ they discretize $H(\div)$, the domain of the divergence; and for $k=n$, they discretize $L^2$.</p>
+		<p>The spaces $\P_r^-\Lambda^0$ and $\P_r\Lambda^0$, which coincide, are the earliest finite elements, going back in the case $r=1$ of linear elements to Courant,\endnote{Bull.~Amer.~Math.~Soc.~49, 1943.}  and collectively referred to as the Lagrange elements.  The spaces $\P_{r+1}^-\Lambda^n$ and $\P_r\Lambda^n$, which also coincide, are the discontinuous Galerkin elements, consisting of piecewise polynomials with no interelement continuity imposed, first introduced by Reed and Hill.\endnote{Los Alamos report~LA-UR-73-479, 1973.}  The space $\P_r^-\Lambda^1$ in $2$ dimensions was introduced by Raviart and Thomas\endnote{Lect.~Notes~Math. 606, 1977.}  and generalized to the $3$-dimensional spaces $\P_r^-\Lambda^1$ and $\P_r^-\Lambda^2$ by Ned\'el\'ec,\endnote{Numer.~Math.~35, 1980.}  while $\P_r\Lambda^1$ is due to Brezzi, Douglas, and Marini\endnote{Numer.~Math.~47, 1985.}  in $2$ dimensions, its generalization to $3$ dimensions again due to Ned\'el\'ec.\endnote{Numer.~Math.~50, 1986.}  The unified treatment and notation of the $\P_r^-\Lambda^k$ and $\P_r\Lambda^k$ families is due to Arnold, Falk, and Winther as part of finite element exterior calculus.\endnote{Acta~Numerica ~15, 2006.}  The space $\P_1^-\Lambda^k$ is the span of the ``elementary forms'' introduced by Whitney.\endnote{\emph{Geometric Integration Theory}, 1957.}</p>
+		<p>The family $\Q_r^-\Lambda^k$ of cubical elements can be derived from the $1$-dimensional Lagrange and discontinuous Galerkin elements by a tensor product construction detailed by Arnold, Boffi, and Bonizzoni,\endnote{Numer.~Math., 2014.} but for the most part were presented individually along with the corresponding simplicial elements in the papers mentioned.  The second cubical family $\S_r\Lambda^k$ is due to Arnold and Awanou.\endnote{Math.~Comp., 2013.}</p>
+<p>The finite element spaces on simplices have been implemented as part of the FEniCS Project\endnote{\tt http://fenicsproject.org} and may be accessed in FEniCS via {\tt FunctionSpace(mesh, "P- Lambda", r, k)} and and {\tt FunctionSpace(mesh, "P Lambda", r, k)} for $\P_r^-\Lambda^k$ and $\P_r\Lambda^k$, respectively.\endnote{Automated Solution of Differential Equations by the Finite Element Method, Springer 2012.}</p>
+                <h2>The $\P_r^-\Lambda^k$ family</h2>
+		<p>The shape function space for $\P_r^-\Lambda^k$ is $\P_{r-1}\Lambda^k+\kappa\P_{r-1}\Lambda^{k+1}$ where $\kappa$ is the Koszul differential.$^7$ It includes the full polynomial space $\P_{r-1}\Lambda^k$, is included in $\P_r\Lambda^k$, and has dimension</p>
+		<p>$$\dim \P_r^-\Lambda^k(\Delta_n)=\binom{r+n}{r+k}\binom{r+k-1}{k}.$$</p>
+		<p>The degrees of freedom are given on faces $f$ of dimension $d\ge k$ by moments of the trace weighted by a full polynomial space:</p>
+		<p>$$u\mapsto \int_f (\tr_f u)\wedge q, \quad q\in\P_{r+k-d-1}\Lambda^{d-k}(f).$$</p>
+		<p>The spaces with constant degree $r$ form a complex:</p>
+		<p>$$\P_r^-\Lambda^0\xrightarrow{\mathrm d}\P_r^-\Lambda^1\xrightarrow{\mathrm d}\cdots\xrightarrow{\mathrm d}\P_r^-\Lambda^n.$$</p>
+                <table class="pure-table">
+                  <thead>
+                    <tr>
+                      <th></th>
+                      <th></th>
+                      <th>r = 1</th>
+                      <th>r = 2</th>
+                      <th>r = 3</th>
+                      <th>r = 4</th>
+                      <th>r = 5</th>
+                      <th>r = 6</th>
+                      <th>r = 7</th>
+                    </tr>
+                  </thead>
 
-	      <tbody>
-		<tr class="pure-table-odd">
-		  <td>n = 1</td>
-		  <td>k  = 0</td>
-		  <td>2</td>
-		  <td>3</td>
-		  <td>4</td>
-		  <td>5</td>
-		  <td>6</td>
-		  <td>7</td>
-		  <td>8</td>
-		</tr>
+                  <tbody>
+                    <tr class="pure-table-odd">
+                      <td>n = 1</td>
+                      <td>k  = 0</td>
+                      <td>2</td>
+                      <td>3</td>
+                      <td>4</td>
+                      <td>5</td>
+                      <td>6</td>
+                      <td>7</td>
+                      <td>8</td>
+                    </tr>
 
-		<tr class="pure-table-odd">
-		  <td></td>
-		  <td>k  = 1</td>
-		  <td>2</td>
-		  <td>3</td>
-		  <td>4</td>
-		  <td>5</td>
-		  <td>6</td>
-		  <td>7</td>
-		  <td>8</td>
-		</tr>
+                    <tr class="pure-table-odd">
+                      <td></td>
+                      <td>k  = 1</td>
+                      <td>2</td>
+                      <td>3</td>
+                      <td>4</td>
+                      <td>5</td>
+                      <td>6</td>
+                      <td>7</td>
+                      <td>8</td>
+                    </tr>
 
-		<tr>
-		  <td>n = 2</td>
-		  <td>k  = 0</td>
-		  <td>2</td>
-		  <td>3</td>
-		  <td>4</td>
-		  <td>5</td>
-		  <td>6</td>
-		  <td>7</td>
-		  <td>8</td>
-		</tr>
+                    <tr>
+                      <td>n = 2</td>
+                      <td>k  = 0</td>
+                      <td>2</td>
+                      <td>3</td>
+                      <td>4</td>
+                      <td>5</td>
+                      <td>6</td>
+                      <td>7</td>
+                      <td>8</td>
+                    </tr>
 
-		<tr>
-		  <td></td>
-		  <td>k  = 1</td>
-		  <td>2</td>
-		  <td>3</td>
-		  <td>4</td>
-		  <td>5</td>
-		  <td>6</td>
-		  <td>7</td>
-		  <td>8</td>
-		</tr>
+                    <tr>
+                      <td></td>
+                      <td>k  = 1</td>
+                      <td>2</td>
+                      <td>3</td>
+                      <td>4</td>
+                      <td>5</td>
+                      <td>6</td>
+                      <td>7</td>
+                      <td>8</td>
+                    </tr>
 
-		<tr>
-		  <td></td>
-		  <td>k  = 2</td>
-		  <td>2</td>
-		  <td>3</td>
-		  <td>4</td>
-		  <td>5</td>
-		  <td>6</td>
-		  <td>7</td>
-		  <td>8</td>
-		</tr>
+                    <tr>
+                      <td></td>
+                      <td>k  = 2</td>
+                      <td>2</td>
+                      <td>3</td>
+                      <td>4</td>
+                      <td>5</td>
+                      <td>6</td>
+                      <td>7</td>
+                      <td>8</td>
+                    </tr>
 
-		<tr class="pure-table-odd">
-		  <td>n = 3</td>
-		  <td>k  = 0</td>
-		  <td>2</td>
-		  <td>3</td>
-		  <td>4</td>
-		  <td>5</td>
-		  <td>6</td>
-		  <td>7</td>
-		  <td>8</td>
-		</tr>
+                    <tr class="pure-table-odd">
+                      <td>n = 3</td>
+                      <td>k  = 0</td>
+                      <td>2</td>
+                      <td>3</td>
+                      <td>4</td>
+                      <td>5</td>
+                      <td>6</td>
+                      <td>7</td>
+                      <td>8</td>
+                    </tr>
 
-		<tr class="pure-table-odd">
-		  <td></td>
-		  <td>k  = 1</td>
-		  <td>2</td>
-		  <td>3</td>
-		  <td>4</td>
-		  <td>5</td>
-		  <td>6</td>
-		  <td>7</td>
-		  <td>8</td>
-		</tr>
+                    <tr class="pure-table-odd">
+                      <td></td>
+                      <td>k  = 1</td>
+                      <td>2</td>
+                      <td>3</td>
+                      <td>4</td>
+                      <td>5</td>
+                      <td>6</td>
+                      <td>7</td>
+                      <td>8</td>
+                    </tr>
 
-		<tr class="pure-table-odd">
-		  <td></td>
-		  <td>k  = 2</td>
-		  <td>2</td>
-		  <td>3</td>
-		  <td>4</td>
-		  <td>5</td>
-		  <td>6</td>
-		  <td>7</td>
-		  <td>8</td>
-		</tr>
+                    <tr class="pure-table-odd">
+                      <td></td>
+                      <td>k  = 2</td>
+                      <td>2</td>
+                      <td>3</td>
+                      <td>4</td>
+                      <td>5</td>
+                      <td>6</td>
+                      <td>7</td>
+                      <td>8</td>
+                    </tr>
 
-		<tr class="pure-table-odd">
-		  <td></td>
-		  <td>k  = 3</td>
-		  <td>2</td>
-		  <td>3</td>
-		  <td>4</td>
-		  <td>5</td>
-		  <td>6</td>
-		  <td>7</td>
-		  <td>8</td>
-		</tr>
-	      </tbody>
-	    </table>
-	  </div>
-	  <div class="pure-u-1-24">
-	    <!-- Blank -->
-	  </div>
-	</div>
+                    <tr class="pure-table-odd">
+                      <td></td>
+                      <td>k  = 3</td>
+                      <td>2</td>
+                      <td>3</td>
+                      <td>4</td>
+                      <td>5</td>
+                      <td>6</td>
+                      <td>7</td>
+                      <td>8</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <h2>The $\P_r\Lambda^k$ family</h2>
+		<p>The shape function space for $\P_r\Lambda^k$ consists of all differential $k$-forms with polynomial coefficients of degree at most $r$, and has dimension</p>
+		<p>$$\dim \P_r\Lambda^k(\Delta_n)=\binom{r+n}{r+k}\binom{r+k}{k}.$$</p>
+		<p>The degrees of freedom are given on faces $f$ of dimension $d\ge k$ by moments of the trace weighted by a $\P_r^-$ space:</p>
+		<p>$$u\mapsto \int_f (\tr_f u)\wedge q, \quad q\in\P^-_{r+k-d}\Lambda^{d-k}(f).$$</p>
+		<p>The spaces with decreasing degree $r$ form a complex:</p>
+		<p>$$\P_r\Lambda^0\xrightarrow{\mathrm d}\P_{r-1}\Lambda^1\xrightarrow{\mathrm d}\cdots\xrightarrow{\mathrm d}\P_{r-n}\Lambda^n.$$</p>
+                <h2>The Qm family</h2>
+                <h2>The S family</h2>
+		<h2>References</h2>
+              </div>
+            </div>
+          </div>
+          <div class="pure-u-1-24">
+            <!-- Blank -->
+          </div>
+        </div>
       </div>
     </div>
 
