@@ -65,7 +65,7 @@ def label(n, k):
     if k == 0:
         return '\mathsf{S}'
     elif k == n:
-        return '\mathsf{dP}'
+        return '\mathsf{dPc}'
     elif k == 1 and n == 2:
         return '\mathsf{BDMc}^{\mathsf{[e/f]}}'
     elif k == 1 and n == 3:
