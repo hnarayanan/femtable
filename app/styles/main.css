@@ -101,3 +101,10 @@ th, td {
 a {
   text-decoration: none;
 }
+
+.pure-table caption {
+    color: #000;
+    font: italic 90%/1 'Lato', sans-serif;
+    padding: 1em 0;
+    text-align: center;
+}
