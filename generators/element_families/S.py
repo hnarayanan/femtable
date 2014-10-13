@@ -35,7 +35,7 @@ S = {
         "citation": ""
     },
     "dPc1_interval": {
-        "label": "\mathsf{dP}_{\mathsf{1}}",
+        "label": "\mathsf{dPc}_{\mathsf{1}}",
         "dimension": 2,
         "image": "dPc1_interval.png",
         "weight_functions": "\dof{1}{1}{0}{1}{2} = 2",
@@ -46,7 +46,7 @@ S = {
         "citation": ""
     },
     "dPc2_interval": {
-        "label": "\mathsf{dP}_{\mathsf{2}}",
+        "label": "\mathsf{dPc}_{\mathsf{2}}",
         "dimension": 3,
         "image": "dPc2_interval.png",
         "weight_functions": "\dof{1}{2}{0}{1}{3} = 3",
@@ -57,7 +57,7 @@ S = {
         "citation": ""
     },
     "dPc3_interval": {
-        "label": "\mathsf{dP}_{\mathsf{3}}",
+        "label": "\mathsf{dPc}_{\mathsf{3}}",
         "dimension": 4,
         "image": "dPc3_interval.png",
         "weight_functions": "\dof{1}{3}{0}{1}{4} = 4",
@@ -134,7 +134,7 @@ S = {
         "citation": "Brezzi, Douglas, and Marini, Numer. Math. 47 (1985)"
     },
     "dPc1_quadrilateral": {
-        "label": "\mathsf{dP}_{\mathsf{1}}",
+        "label": "\mathsf{dPc}_{\mathsf{1}}",
         "dimension": 3,
         "image": "dPc1_quadrilateral.png",
         "weight_functions": "\dof{1}{1}{0}{2}{3} = 3",
@@ -145,7 +145,7 @@ S = {
         "citation": ""
     },
     "dPc2_quadrilateral": {
-        "label": "\mathsf{dP}_{\mathsf{2}}",
+        "label": "\mathsf{dPc}_{\mathsf{2}}",
         "dimension": 6,
         "image": "dPc2_quadrilateral.png",
         "weight_functions": "\dof{1}{2}{0}{2}{6} = 6",
@@ -156,7 +156,7 @@ S = {
         "citation": ""
     },
     "dPc3_quadrilateral": {
-        "label": "\mathsf{dP}_{\mathsf{3}}",
+        "label": "\mathsf{dPc}_{\mathsf{3}}",
         "dimension": 10,
         "image": "dPc3_quadrilateral.png",
         "weight_functions": "\dof{1}{3}{0}{2}{10} = 10",
@@ -266,7 +266,7 @@ S = {
         "citation": "Arnold and Awanou, Math. Comp. 83 (2014)"
     },
     "dPc1_hexahedron": {
-        "label": "\mathsf{dP}_{\mathsf{1}}",
+        "label": "\mathsf{dPc}_{\mathsf{1}}",
         "dimension": 4,
         "image": "dPc1_hexahedron.png",
         "weight_functions": "\dof{1}{1}{0}{3}{4} = 4",
@@ -277,7 +277,7 @@ S = {
         "citation": ""
     },
     "dPc2_hexahedron": {
-        "label": "\mathsf{dP}_{\mathsf{2}}",
+        "label": "\mathsf{dPc}_{\mathsf{2}}",
         "dimension": 10,
         "image": "dPc2_hexahedron.png",
         "weight_functions": "\dof{1}{2}{0}{3}{10} = 10",
@@ -288,7 +288,7 @@ S = {
         "citation": ""
     },
     "dPc3_hexahedron": {
-        "label": "\mathsf{dP}_{\mathsf{3}}",
+        "label": "\mathsf{dPc}_{\mathsf{3}}",
         "dimension": 20,
         "image": "dPc3_hexahedron.png",
         "weight_functions": "\dof{1}{3}{0}{3}{20} = 20",
