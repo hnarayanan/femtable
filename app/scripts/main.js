@@ -2,6 +2,10 @@ jQuery('#responsive-title').fitText(2.0);
 
 MathJax.Hub.Config({
   tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+  styles: {
+    "#MathJax_Message": {left: "", right: 0},
+    "#MathJax_MSIE_Frame": {left: "", right: 0}
+  },
   TeX: {
     Macros: {
       P: ['\\mathcal{P}_{#1}\\Lambda^{#2}(\\Delta_{#3})', 3],
