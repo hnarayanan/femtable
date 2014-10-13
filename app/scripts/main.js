@@ -2,6 +2,7 @@ jQuery('#responsive-title').fitText(2.0);
 
 MathJax.Hub.Config({
   messageStyle: 'none',
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
   TeX: {
     Macros: {
       P: ['\\mathcal{P}_{#1}\\Lambda^{#2}(\\Delta_{#3})', 3],
@@ -17,6 +18,11 @@ MathJax.Hub.Config({
       pl: '\\,+\\,',
       div: '\\operatorname{div}',
       curl: '\\operatorname{curl}',
+      tr: '\\operatorname{tr}',
+      H: '\\mathcal H',
+      P: '\\mathcal P',
+      Q: '\\mathcal Q',
+      S: '\\mathcal S',
     }
   }
 });

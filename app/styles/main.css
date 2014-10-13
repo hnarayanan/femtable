@@ -36,8 +36,11 @@
 h1, h2 {
   font-family: 'Merriweather', serif;
   font-weight: 900;
-  color: #747066;
   line-height: 0.8em;
+}
+
+h1 {
+  color: #747066;
 }
 
 .element {
