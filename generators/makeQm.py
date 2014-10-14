@@ -79,12 +79,12 @@ def image(n, k, r):
         return symb(n, k) + str(deg(n, k, r)) + '_' + shape(n) + '.png'
 
 def weight_functions(n, k, r):
-    val = '\dof'
+    val = '\dofq'
     val += '{' + str(nface(k, n)) + '}' + '{' + str(r-1) + '}{0}{' + str(k) + '}{' + str(dimQm(k, 0, r-1)) + '}'
     tdim = nface(k, n) * dimQm(k, 0, r-1)
     for d in range(k+1, n+1):
         if dimQm(d, d-k, r-1) > 0:
-            val += ' \pl \dof{' + str(nface(d, n)) + '}' + '{' + str(r-1) + '}{' + str(d-k) +  '}{' + str(d) + '}{' + str(dimQm(d, d-k, r-1)) + '}'
+            val += ' \pl \dofq{' + str(nface(d, n)) + '}' + '{' + str(r-1) + '}{' + str(d-k) +  '}{' + str(d) + '}{' + str(dimQm(d, d-k, r-1)) + '}'
             tdim += nface(d, n) * dimQm(d, d-k, r-1)
         else:
             break
