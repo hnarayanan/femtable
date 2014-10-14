@@ -61,10 +61,10 @@ h1 {
   padding-bottom: 5px;
 }
 
-.the_k {
+.meta {
   font-size: 80%;
   font-style: italic;
-  margin-left: 8px;
+  text-align: center;
 }
 
 .modal-content {
