@@ -20,14 +20,14 @@ This is the parent `<div>` that contains the menu and the content area.
 }
 #layout.active {
     position: relative;
-    left: 150px;
+    left: 140px;
 }
 #layout.active #menu {
-    left: 150px;
-    width: 150px;
+    left: 140px;
+    width: 140px;
 }
 #layout.active .menu-link {
-    left: 150px;
+    left: 140px;
 }
 
 /*
@@ -36,8 +36,8 @@ appears on the left side of the page.
 */
 
 #menu {
-    margin-left: -150px; /* "#menu" width */
-    width: 150px;
+    margin-left: -140px; /* "#menu" width */
+    width: 140px;
     position: fixed;
     top: 0;
     left: 0;
@@ -53,7 +53,7 @@ appears on the left side of the page.
 #menu a {
     color: #999;
     border: none;
-    padding: 0.6em 0 0.6em 0.6em;
+    padding: 0.6em 0 0.6em 1.3em;
 }
 
 /*
@@ -161,9 +161,9 @@ small screens.
 /* -- Responsive Styles (Media Queries) ------------------------------------- */
 
 /*
-Hides the menu at `48em`, but modify this based on your app's needs.
+Hides the menu at `64em`, but modify this based on your app's needs.
 */
-@media (min-width: 48em) {
+@media (min-width: 64em) {
 
     .header,
     .content {
@@ -172,20 +172,20 @@ Hides the menu at `48em`, but modify this based on your app's needs.
     }
 
     #layout {
-        padding-left: 150px; /* left col width "#menu" */
+        padding-left: 140px; /* left col width "#menu" */
         left: 0;
     }
     #menu {
-        left: 150px;
+        left: 140px;
     }
 
     .menu-link {
         position: fixed;
-        left: 150px;
+        left: 140px;
         display: none;
     }
 
     #layout.active .menu-link {
-        left: 150px;
+        left: 140px;
     }
 }
