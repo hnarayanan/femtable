@@ -1,6 +1,6 @@
 {% for element in elements %}
-      <!-- {{element.0}} detail  -->
-      <div class="modal fade" id="{{element.0}}" tabindex="-1" role="dialog">
+      <!-- {{element.1.id}} detail  -->
+      <div class="modal fade" id="{{element.1.id}}" tabindex="-1" role="dialog">
         <div class="modal-dialog">
           <div class="modal-content {{element.1.color}}">
             <div class="modal-body">
@@ -12,7 +12,7 @@
 		<div class="pure-u-22-24">
 		  <div class="pure-g">
 		    <div class="pure-u-22-24">
-		      <img src="images/large/{{element.1.image}}" alt="{{element.0}} element image" class="pure-img">
+		      <img src="images/large/{{element.1.image}}" alt="{{element.1.id}} element image" class="pure-img">
 		    </div>
 		    <div class="pure-u-2-24">
 		      {{element.1.dimension}}
