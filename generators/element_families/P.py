@@ -2,7 +2,7 @@
 
 P = {
     "P1_interval": {
-        "id": P_P1_interval",
+        "id": "P_P1_interval",
         "label": "\mathsf{P}_{\mathsf{1}}",
         "dimension": 2,
         "image": "P1_interval.png",
@@ -14,7 +14,7 @@ P = {
         "citation": "Courant, Bull. Amer. Math. Soc. (1943)"
     },
     "P2_interval": {
-        "id": P_P2_interval",
+        "id": "P_P2_interval",
         "label": "\mathsf{P}_{\mathsf{2}}",
         "dimension": 3,
         "image": "P2_interval.png",
@@ -26,7 +26,7 @@ P = {
         "citation": "Courant, Bull. Amer. Math. Soc. (1943)"
     },
     "P3_interval": {
-        "id": P_P3_interval",
+        "id": "P_P3_interval",
         "label": "\mathsf{P}_{\mathsf{3}}",
         "dimension": 4,
         "image": "P3_interval.png",
@@ -38,7 +38,7 @@ P = {
         "citation": "Courant, Bull. Amer. Math. Soc. (1943)"
     },
     "dP1_interval": {
-        "id": P_dP1_interval",
+        "id": "P_dP1_interval",
         "label": "\mathsf{dP}_{\mathsf{1}}",
         "dimension": 2,
         "image": "dP1_interval.png",
@@ -50,7 +50,7 @@ P = {
         "citation": "Reed and Hill, Los Alamos Report LA-UR-73-479 (1973)"
     },
     "dP2_interval": {
-        "id": P_dP2_interval",
+        "id": "P_dP2_interval",
         "label": "\mathsf{dP}_{\mathsf{2}}",
         "dimension": 3,
         "image": "dP2_interval.png",
@@ -62,7 +62,7 @@ P = {
         "citation": "Reed and Hill, Los Alamos Report LA-UR-73-479 (1973)"
     },
     "dP3_interval": {
-        "id": P_dP3_interval",
+        "id": "P_dP3_interval",
         "label": "\mathsf{dP}_{\mathsf{3}}",
         "dimension": 4,
         "image": "dP3_interval.png",
@@ -74,7 +74,7 @@ P = {
         "citation": "Reed and Hill, Los Alamos Report LA-UR-73-479 (1973)"
     },
     "P1_triangle": {
-        "id": P_P1_triangle",
+        "id": "P_P1_triangle",
         "label": "\mathsf{P}_{\mathsf{1}}",
         "dimension": 3,
         "image": "P1_triangle.png",
@@ -86,7 +86,7 @@ P = {
         "citation": "Courant, Bull. Amer. Math. Soc. (1943)"
     },
     "P2_triangle": {
-        "id": P_P2_triangle",
+        "id": "P_P2_triangle",
         "label": "\mathsf{P}_{\mathsf{2}}",
         "dimension": 6,
         "image": "P2_triangle.png",
@@ -98,7 +98,7 @@ P = {
         "citation": "Courant, Bull. Amer. Math. Soc. (1943)"
     },
     "P3_triangle": {
-        "id": P_P3_triangle",
+        "id": "P_P3_triangle",
         "label": "\mathsf{P}_{\mathsf{3}}",
         "dimension": 10,
         "image": "P3_triangle.png",
@@ -110,7 +110,7 @@ P = {
         "citation": "Courant, Bull. Amer. Math. Soc. (1943)"
     },
     "BDM1_triangle": {
-        "id": P_BDM1_triangle",
+        "id": "P_BDM1_triangle",
         "label": "\mathsf{BDM}^{\mathsf{[e/f]}}_{\mathsf{1}}",
         "dimension": 6,
         "image": "placeholder-square.png",
@@ -122,7 +122,7 @@ P = {
         "citation": "Brezzi, Douglas, and Marini, Numer. Math. 47 (1985)"
     },
     "BDM2_triangle": {
-        "id": P_BDM2_triangle",
+        "id": "P_BDM2_triangle",
         "label": "\mathsf{BDM}^{\mathsf{[e/f]}}_{\mathsf{2}}",
         "dimension": 12,
         "image": "placeholder-square.png",
@@ -134,7 +134,7 @@ P = {
         "citation": "Brezzi, Douglas, and Marini, Numer. Math. 47 (1985)"
     },
     "BDM3_triangle": {
-        "id": P_BDM3_triangle",
+        "id": "P_BDM3_triangle",
         "label": "\mathsf{BDM}^{\mathsf{[e/f]}}_{\mathsf{3}}",
         "dimension": 20,
         "image": "placeholder-square.png",
@@ -146,7 +146,7 @@ P = {
         "citation": "Brezzi, Douglas, and Marini, Numer. Math. 47 (1985)"
     },
     "dP1_triangle": {
-        "id": P_dP1_triangle",
+        "id": "P_dP1_triangle",
         "label": "\mathsf{dP}_{\mathsf{1}}",
         "dimension": 3,
         "image": "dP1_triangle.png",
@@ -158,7 +158,7 @@ P = {
         "citation": "Reed and Hill, Los Alamos Report LA-UR-73-479 (1973)"
     },
     "dP2_triangle": {
-        "id": P_dP2_triangle",
+        "id": "P_dP2_triangle",
         "label": "\mathsf{dP}_{\mathsf{2}}",
         "dimension": 6,
         "image": "dP2_triangle.png",
@@ -170,7 +170,7 @@ P = {
         "citation": "Reed and Hill, Los Alamos Report LA-UR-73-479 (1973)"
     },
     "dP3_triangle": {
-        "id": P_dP3_triangle",
+        "id": "P_dP3_triangle",
         "label": "\mathsf{dP}_{\mathsf{3}}",
         "dimension": 10,
         "image": "dP3_triangle.png",
@@ -182,7 +182,7 @@ P = {
         "citation": "Reed and Hill, Los Alamos Report LA-UR-73-479 (1973)"
     },
     "P1_tetrahedron": {
-        "id": P_P1_tetrahedron",
+        "id": "P_P1_tetrahedron",
         "label": "\mathsf{P}_{\mathsf{1}}",
         "dimension": 4,
         "image": "P1_tetrahedron.png",
@@ -194,7 +194,7 @@ P = {
         "citation": "Courant, Bull. Amer. Math. Soc. (1943)"
     },
     "P2_tetrahedron": {
-        "id": P_P2_tetrahedron",
+        "id": "P_P2_tetrahedron",
         "label": "\mathsf{P}_{\mathsf{2}}",
         "dimension": 10,
         "image": "P2_tetrahedron.png",
@@ -206,7 +206,7 @@ P = {
         "citation": "Courant, Bull. Amer. Math. Soc. (1943)"
     },
     "P3_tetrahedron": {
-        "id": P_P3_tetrahedron",
+        "id": "P_P3_tetrahedron",
         "label": "\mathsf{P}_{\mathsf{3}}",
         "dimension": 20,
         "image": "P3_tetrahedron.png",
@@ -218,7 +218,7 @@ P = {
         "citation": "Courant, Bull. Amer. Math. Soc. (1943)"
     },
     "N2e1_tetrahedron": {
-        "id": P_N2e1_tetrahedron",
+        "id": "P_N2e1_tetrahedron",
         "label": "\mathsf{N2}^{\mathsf{e}}_{\mathsf{1}}",
         "dimension": 12,
         "image": "N2e1_tetrahedron.png",
@@ -230,7 +230,7 @@ P = {
         "citation": u"Nédélec, Numer. Math. 50 (1986)"
     },
     "N2e2_tetrahedron": {
-        "id": P_N2e2_tetrahedron",
+        "id": "P_N2e2_tetrahedron",
         "label": "\mathsf{N2}^{\mathsf{e}}_{\mathsf{2}}",
         "dimension": 30,
         "image": "N2e2_tetrahedron.png",
@@ -242,7 +242,7 @@ P = {
         "citation": u"Nédélec, Numer. Math. 50 (1986)"
     },
     "N2e3_tetrahedron": {
-        "id": P_N2e3_tetrahedron",
+        "id": "P_N2e3_tetrahedron",
         "label": "\mathsf{N2}^{\mathsf{e}}_{\mathsf{3}}",
         "dimension": 60,
         "image": "N2e3_tetrahedron.png",
@@ -254,7 +254,7 @@ P = {
         "citation": u"Nédélec, Numer. Math. 50 (1986)"
     },
     "N2f1_tetrahedron": {
-        "id": P_N2f1_tetrahedron",
+        "id": "P_N2f1_tetrahedron",
         "label": "\mathsf{N2}^{\mathsf{f}}_{\mathsf{1}}",
         "dimension": 12,
         "image": "N2f1_tetrahedron.png",
@@ -266,7 +266,7 @@ P = {
         "citation": u"Nédélec, Numer. Math. 50 (1986)"
     },
     "N2f2_tetrahedron": {
-        "id": P_N2f2_tetrahedron",
+        "id": "P_N2f2_tetrahedron",
         "label": "\mathsf{N2}^{\mathsf{f}}_{\mathsf{2}}",
         "dimension": 30,
         "image": "N2f2_tetrahedron.png",
@@ -278,7 +278,7 @@ P = {
         "citation": u"Nédélec, Numer. Math. 50 (1986)"
     },
     "N2f3_tetrahedron": {
-        "id": P_N2f3_tetrahedron",
+        "id": "P_N2f3_tetrahedron",
         "label": "\mathsf{N2}^{\mathsf{f}}_{\mathsf{3}}",
         "dimension": 60,
         "image": "N2f3_tetrahedron.png",
@@ -290,7 +290,7 @@ P = {
         "citation": u"Nédélec, Numer. Math. 50 (1986)"
     },
     "dP1_tetrahedron": {
-        "id": P_dP1_tetrahedron",
+        "id": "P_dP1_tetrahedron",
         "label": "\mathsf{dP}_{\mathsf{1}}",
         "dimension": 4,
         "image": "dP1_tetrahedron.png",
@@ -302,7 +302,7 @@ P = {
         "citation": "Reed and Hill, Los Alamos Report LA-UR-73-479 (1973)"
     },
     "dP2_tetrahedron": {
-        "id": P_dP2_tetrahedron",
+        "id": "P_dP2_tetrahedron",
         "label": "\mathsf{dP}_{\mathsf{2}}",
         "dimension": 10,
         "image": "dP2_tetrahedron.png",
@@ -314,7 +314,7 @@ P = {
         "citation": "Reed and Hill, Los Alamos Report LA-UR-73-479 (1973)"
     },
     "dP3_tetrahedron": {
-        "id": P_dP3_tetrahedron",
+        "id": "P_dP3_tetrahedron",
         "label": "\mathsf{dP}_{\mathsf{3}}",
         "dimension": 20,
         "image": "dP3_tetrahedron.png",

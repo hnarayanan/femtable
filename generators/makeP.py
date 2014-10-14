@@ -126,7 +126,7 @@ for n in range(1, 4):
     for k in range(0, n+1):
         for r in range(1, 4):
             c +=  '    "' + name(n, k, r) +  '": {\n' + \
-                  '        "id": ' + feecsymb + '_' + name(n, k, r) +'",\n' + \
+                  '        "id": "' + feecsymb + '_' + name(n, k, r) +'",\n' + \
                   '        "label": "' + label(n, k)  + '_{\mathsf{' + str(deg(n, k, r)) + '}}'+ '",\n' + \
                   '        "dimension": ' + str(dimP(n, k, r)) + ',\n' + \
                   '        "image": "' + image(n, k, r) + '",\n' + \
