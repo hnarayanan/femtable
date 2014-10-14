@@ -2,6 +2,7 @@
 
 Qm = {
     "Q1_interval": {
+        "id": Qm_Q1_interval",
         "label": "\mathsf{Q}_{\mathsf{1}}",
         "dimension": 2,
         "image": "Q1_interval.png",
@@ -13,6 +14,7 @@ Qm = {
         "citation": "Courant, Bull. Amer. Math. Soc. (1943)"
     },
     "Q2_interval": {
+        "id": Qm_Q2_interval",
         "label": "\mathsf{Q}_{\mathsf{2}}",
         "dimension": 3,
         "image": "Q2_interval.png",
@@ -24,6 +26,7 @@ Qm = {
         "citation": "Courant, Bull. Amer. Math. Soc. (1943)"
     },
     "Q3_interval": {
+        "id": Qm_Q3_interval",
         "label": "\mathsf{Q}_{\mathsf{3}}",
         "dimension": 4,
         "image": "Q3_interval.png",
@@ -35,6 +38,7 @@ Qm = {
         "citation": "Courant, Bull. Amer. Math. Soc. (1943)"
     },
     "dQ0_interval": {
+        "id": Qm_dQ0_interval",
         "label": "\mathsf{dQ}_{\mathsf{0}}",
         "dimension": 1,
         "image": "dQ0_interval.png",
@@ -46,6 +50,7 @@ Qm = {
         "citation": ""
     },
     "dQ1_interval": {
+        "id": Qm_dQ1_interval",
         "label": "\mathsf{dQ}_{\mathsf{1}}",
         "dimension": 2,
         "image": "dQ1_interval.png",
@@ -57,6 +62,7 @@ Qm = {
         "citation": ""
     },
     "dQ2_interval": {
+        "id": Qm_dQ2_interval",
         "label": "\mathsf{dQ}_{\mathsf{2}}",
         "dimension": 3,
         "image": "dQ2_interval.png",
@@ -68,6 +74,7 @@ Qm = {
         "citation": ""
     },
     "Q1_quadrilateral": {
+        "id": Qm_Q1_quadrilateral",
         "label": "\mathsf{Q}_{\mathsf{1}}",
         "dimension": 4,
         "image": "Q1_quadrilateral.png",
@@ -79,6 +86,7 @@ Qm = {
         "citation": "Courant, Bull. Amer. Math. Soc. (1943)"
     },
     "Q2_quadrilateral": {
+        "id": Qm_Q2_quadrilateral",
         "label": "\mathsf{Q}_{\mathsf{2}}",
         "dimension": 9,
         "image": "Q2_quadrilateral.png",
@@ -90,6 +98,7 @@ Qm = {
         "citation": "Courant, Bull. Amer. Math. Soc. (1943)"
     },
     "Q3_quadrilateral": {
+        "id": Qm_Q3_quadrilateral",
         "label": "\mathsf{Q}_{\mathsf{3}}",
         "dimension": 16,
         "image": "Q3_quadrilateral.png",
@@ -101,6 +110,7 @@ Qm = {
         "citation": "Courant, Bull. Amer. Math. Soc. (1943)"
     },
     "RTc1_quadrilateral": {
+        "id": Qm_RTc1_quadrilateral",
         "label": "\mathsf{RTc}^{\mathsf{[e/f]}}_{\mathsf{1}}",
         "dimension": 4,
         "image": "placeholder-square.png",
@@ -112,6 +122,7 @@ Qm = {
         "citation": "Raviart and Thomas, Lecture Notes in Math. 606 (1977)"
     },
     "RTc2_quadrilateral": {
+        "id": Qm_RTc2_quadrilateral",
         "label": "\mathsf{RTc}^{\mathsf{[e/f]}}_{\mathsf{2}}",
         "dimension": 12,
         "image": "placeholder-square.png",
@@ -123,6 +134,7 @@ Qm = {
         "citation": "Raviart and Thomas, Lecture Notes in Math. 606 (1977)"
     },
     "RTc3_quadrilateral": {
+        "id": Qm_RTc3_quadrilateral",
         "label": "\mathsf{RTc}^{\mathsf{[e/f]}}_{\mathsf{3}}",
         "dimension": 24,
         "image": "placeholder-square.png",
@@ -134,6 +146,7 @@ Qm = {
         "citation": "Raviart and Thomas, Lecture Notes in Math. 606 (1977)"
     },
     "dQ0_quadrilateral": {
+        "id": Qm_dQ0_quadrilateral",
         "label": "\mathsf{dQ}_{\mathsf{0}}",
         "dimension": 1,
         "image": "dQ0_quadrilateral.png",
@@ -145,6 +158,7 @@ Qm = {
         "citation": ""
     },
     "dQ1_quadrilateral": {
+        "id": Qm_dQ1_quadrilateral",
         "label": "\mathsf{dQ}_{\mathsf{1}}",
         "dimension": 4,
         "image": "dQ1_quadrilateral.png",
@@ -156,6 +170,7 @@ Qm = {
         "citation": ""
     },
     "dQ2_quadrilateral": {
+        "id": Qm_dQ2_quadrilateral",
         "label": "\mathsf{dQ}_{\mathsf{2}}",
         "dimension": 9,
         "image": "dQ2_quadrilateral.png",
@@ -167,6 +182,7 @@ Qm = {
         "citation": ""
     },
     "Q1_hexahedron": {
+        "id": Qm_Q1_hexahedron",
         "label": "\mathsf{Q}_{\mathsf{1}}",
         "dimension": 8,
         "image": "Q1_hexahedron.png",
@@ -178,6 +194,7 @@ Qm = {
         "citation": "Courant, Bull. Amer. Math. Soc. (1943)"
     },
     "Q2_hexahedron": {
+        "id": Qm_Q2_hexahedron",
         "label": "\mathsf{Q}_{\mathsf{2}}",
         "dimension": 27,
         "image": "Q2_hexahedron.png",
@@ -189,6 +206,7 @@ Qm = {
         "citation": "Courant, Bull. Amer. Math. Soc. (1943)"
     },
     "Q3_hexahedron": {
+        "id": Qm_Q3_hexahedron",
         "label": "\mathsf{Q}_{\mathsf{3}}",
         "dimension": 64,
         "image": "Q3_hexahedron.png",
@@ -200,6 +218,7 @@ Qm = {
         "citation": "Courant, Bull. Amer. Math. Soc. (1943)"
     },
     "Nce1_hexahedron": {
+        "id": Qm_Nce1_hexahedron",
         "label": "\mathsf{Nc}^{\mathsf{e}}_{\mathsf{1}}",
         "dimension": 12,
         "image": "Nce1_hexahedron.png",
@@ -211,6 +230,7 @@ Qm = {
         "citation": u"Nédélec, Numer. Math. 35 (1980)"
     },
     "Nce2_hexahedron": {
+        "id": Qm_Nce2_hexahedron",
         "label": "\mathsf{Nc}^{\mathsf{e}}_{\mathsf{2}}",
         "dimension": 54,
         "image": "Nce2_hexahedron.png",
@@ -222,6 +242,7 @@ Qm = {
         "citation": u"Nédélec, Numer. Math. 35 (1980)"
     },
     "Nce3_hexahedron": {
+        "id": Qm_Nce3_hexahedron",
         "label": "\mathsf{Nc}^{\mathsf{e}}_{\mathsf{3}}",
         "dimension": 144,
         "image": "Nce3_hexahedron.png",
@@ -233,6 +254,7 @@ Qm = {
         "citation": u"Nédélec, Numer. Math. 35 (1980)"
     },
     "Ncf1_hexahedron": {
+        "id": Qm_Ncf1_hexahedron",
         "label": "\mathsf{Nc}^{\mathsf{f}}_{\mathsf{1}}",
         "dimension": 6,
         "image": "Ncf1_hexahedron.png",
@@ -244,6 +266,7 @@ Qm = {
         "citation": u"Nédélec, Numer. Math. 35 (1980)"
     },
     "Ncf2_hexahedron": {
+        "id": Qm_Ncf2_hexahedron",
         "label": "\mathsf{Nc}^{\mathsf{f}}_{\mathsf{2}}",
         "dimension": 36,
         "image": "Ncf2_hexahedron.png",
@@ -255,6 +278,7 @@ Qm = {
         "citation": u"Nédélec, Numer. Math. 35 (1980)"
     },
     "Ncf3_hexahedron": {
+        "id": Qm_Ncf3_hexahedron",
         "label": "\mathsf{Nc}^{\mathsf{f}}_{\mathsf{3}}",
         "dimension": 108,
         "image": "Ncf3_hexahedron.png",
@@ -266,6 +290,7 @@ Qm = {
         "citation": u"Nédélec, Numer. Math. 35 (1980)"
     },
     "dQ0_hexahedron": {
+        "id": Qm_dQ0_hexahedron",
         "label": "\mathsf{dQ}_{\mathsf{0}}",
         "dimension": 1,
         "image": "dQ0_hexahedron.png",
@@ -277,6 +302,7 @@ Qm = {
         "citation": ""
     },
     "dQ1_hexahedron": {
+        "id": Qm_dQ1_hexahedron",
         "label": "\mathsf{dQ}_{\mathsf{1}}",
         "dimension": 8,
         "image": "dQ1_hexahedron.png",
@@ -288,6 +314,7 @@ Qm = {
         "citation": ""
     },
     "dQ2_hexahedron": {
+        "id": Qm_dQ2_hexahedron",
         "label": "\mathsf{dQ}_{\mathsf{2}}",
         "dimension": 27,
         "image": "dQ2_hexahedron.png",
