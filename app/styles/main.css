@@ -29,7 +29,9 @@
   background-color: #bdc3c7;
 }
 
-* {
+
+html, button, input, select, textarea,
+.pure-g [class *= "pure-u"] {
   font-family: 'Lato', sans-serif;
 }
 
@@ -49,8 +51,8 @@ h1 {
 }
 
 .element img {
-  margin-left:auto;
-  margin-right:auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .label {
@@ -90,8 +92,8 @@ h1 {
 }
 
 .pure-table {
-  margin-left:auto;
-  margin-right:auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 th, td {
