@@ -5,7 +5,15 @@
 	      <div class="pure-u-4-24">
 	      </div>
 	      <div class="pure-u-20-24">
-		<h2>The element family</h2>
+		{% if loop.index == 1 %}
+		<h2 id="Pm-family"><a href="background.html#Pm-family">The $\mP_r^-\Lambda^k$ family</a></h2>
+		{% elif loop.index == 2 %}
+		<h2 id="P-family"><a href="background.html#P-family">The $\mP_r\Lambda^k$ family</a></h2>
+		{% elif loop.index == 3 %}
+		<h2 id="Qm-family"><a href="background.html#Qm-family">The $\mQ_r^-\Lambda^k$ family</a></h2>
+		{% elif loop.index == 4 %}
+		<h2 id="S-family"><a href="background.html#S-family">The $\mS_r\Lambda^k$ family</a></h2>
+		{% endif %}
 	      </div>
 	    </div>
 	    <div class="pure-g">
