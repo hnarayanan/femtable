@@ -118,6 +118,10 @@ a, a:visited {
   text-align: center;
 }
 
+th.heading, td.heading {
+    background-color: #e0e0e0;
+}
+
 .element-family {
   margin-bottom: 30px;
 }
