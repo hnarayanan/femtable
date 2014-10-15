@@ -72,10 +72,7 @@ def label(n, k):
         return 'ERROR'
 
 def image(n, k, r):
-    if k == 1 and n == 2:
-        return 'placeholder-square.png'
-    else:
-        return symb(n, k) + str(deg(n, k, r)) + '_' + shape(n) + '.png'
+    return symb(n, k) + str(deg(n, k, r)) + '_' + shape(n) + '.png'
 
 def weight_functions(n, k, r):
     val = '\dofm'
