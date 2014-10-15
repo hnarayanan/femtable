@@ -125,3 +125,7 @@ td.heading {
 .element-family {
   margin-bottom: 30px;
 }
+
+code {
+  font-size: 90%;
+}
