@@ -104,3 +104,8 @@ table_data = { "table" : [
 
 generated = table_template.render(table_data)
 print generated
+
+
+# run with
+# python generate_table.py > foo.html &&  sed  's/\^{\\mathsf{\[e\/f\]}}//g' foo.html > bar.html
+# and paste bar.html into index.html
