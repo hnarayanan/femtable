@@ -42,6 +42,10 @@ h1, h2 {
 }
 
 h1 {
+  margin-bottom: 0.3em;
+}
+
+h1 {
   color: #747066;
 }
 
