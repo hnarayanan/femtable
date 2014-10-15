@@ -32,10 +32,10 @@ for n in range(1, nmax + 1):
         else:
             print '<tr class="pure-table-odd">'
         if i == 0:
-            print "<td>n = %d</td>" % n
+            print '<td class="heading">%d</td>' % n
         else:
-            print "<td></td>"
-        print "<td>k = %d</td>" % k
+            print '<td class="heading"></td>'
+        print '<td class="heading">%d</td>' % k
         for r in range(1, qmax + 1):
             dofs = []
             dim = nCk(r + n, r + k)*nCk(r + k - 1, k)
