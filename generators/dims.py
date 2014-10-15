@@ -21,9 +21,32 @@ num_facets_s = {(1, 0): 2,
                 (3, 3): 1}
 
 
-# P_r^- L^k
-print "Space P_r^- L^k"
-print "==============="
+# # P_r^- L^k
+# print "Space P_r^- L^k"
+# print "==============="
+# print
+# for n in range(1, nmax + 1):
+#     for i, k in enumerate(range(n + 1)):
+#         if n % 2 == 0:
+#             print "<tr>"
+#         else:
+#             print '<tr class="pure-table-odd">'
+#         if i == 0:
+#             print '<td class="heading">%d</td>' % n
+#         else:
+#             print '<td class="heading"></td>'
+#         print '<td class="heading">%d</td>' % k
+#         for r in range(1, qmax + 1):
+#             dofs = []
+#             dim = nCk(r + n, r + k)*nCk(r + k - 1, k)
+#             print "<td>%d</td>" % dim
+#         print "</tr>"
+#     print
+
+
+# P_r L^k
+print "Space P_r L^k"
+print "============="
 print
 for n in range(1, nmax + 1):
     for i, k in enumerate(range(n + 1)):
@@ -38,27 +61,10 @@ for n in range(1, nmax + 1):
         print '<td class="heading">%d</td>' % k
         for r in range(1, qmax + 1):
             dofs = []
-            dim = nCk(r + n, r + k)*nCk(r + k - 1, k)
+            dim = nCk(r + n, r + k)*nCk(r + k, k)
             print "<td>%d</td>" % dim
         print "</tr>"
     print
-
-
-# # P_r L^k
-# print "Space P_r L^k"
-# print "============="
-# print
-# for n in range(1, nmax + 1):
-#     print "n = %d" % n
-#     print "=====\n"
-#     for k in range(n + 1):
-#         print "k = %d:" % k,
-#         for r in range(1, qmax + 1):
-#             dofs = []
-#             dim = nCk(r + n, r + k)*nCk(r + k, k)
-#             print dim,
-#         print
-#     print
 
 # # Q_r^- L^k
 # print "Space Q_r^- L^k"
