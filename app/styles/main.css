@@ -49,6 +49,14 @@ h1 {
   color: #747066;
 }
 
+th, td {
+  text-align: right;
+}
+
+a {
+  text-decoration: none;
+}
+
 .element {
   margin: 3px;
   border-radius: 3px;
@@ -100,17 +108,13 @@ h1 {
   margin-right: auto;
 }
 
-th, td {
-  text-align: right;
-}
-
-a {
-  text-decoration: none;
-}
-
 .pure-table caption {
-    color: #000;
-    font: italic 90%/1 'Lato', sans-serif;
-    padding: 1em 0;
-    text-align: center;
+  color: #000;
+  font: italic 90%/1 'Lato', sans-serif;
+  padding: 1em 0;
+  text-align: center;
+}
+
+.element-family {
+  margin-bottom: 30px;
 }
