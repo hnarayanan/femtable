@@ -56,7 +56,7 @@
           <div class="pure-u-22-24">
             <h1 id="responsive-title">Periodic Table of the Finite Elements</h1>
             <div class="pure-g">
-              <div class="pure-u-1 pure-u-md-3-5">
+              <div class="pure-u-1 pure-u-lg-3-5">
 		<h2>Background</h2>
 		<p>The table presents the primary spaces of finite elements for the discretization of the fundamental operators of vector calculus: the gradient, curl, and divergence.  A finite element space is a space of piecewise polynomial functions on a domain determined by: (1) a mesh of the domain into polyhedral cells called <em>elements,</em> (2) a finite dimensional space of polynomial functions on each element called the <em>shape functions,</em> and (3) a unisolvent set of functionals on the shape functions of each element called <em>degrees of freedom</em> (DOFs), each DOF being associated to a (generalized) face of the element, and specifying a quantity which takes a single value for all elements sharing the face.  The element diagrams depict the DOFs and their association to faces.</p>
 		<p>The spaces $\mP_r^-\Lambda^k$ and $\mP_r\Lambda^k$ depicted on the left half of the table are the two primary families of finite element spaces for meshes of simplices, and the spaces $\mQ_r^-\Lambda^k$ and $\mS_r\Lambda^k$ on the right side are for meshes of cubes or boxes. Each is defined in any dimension $n\ge 1$, for each value of the polynomial degree $r\ge 1$, and each value of $0 \leq k \leq n$.  The parameter $k$ refers to the operator: the spaces belong to the domain of the $k$th exterior derivative.  Thus for $k=0$, the spaces discretize the Sobolev space $H^1$, the domain of the gradient operator; for $k=1$, they discretize $H(\curl)$, the domain of the curl; for $k=n-1$ they discretize $H(\div)$, the domain of the divergence; and for $k=n$, they discretize $L^2$.</p>
@@ -72,7 +72,7 @@
 		  <code>FiniteElement("S",&nbsp; shape, r, k)</code>
 		</p>
 		<p>for $\mP_r^-\Lambda^k$, $\mP_r\Lambda^k$, $\mQ_r^-\Lambda^k$, and $\mS_r\Lambda^k$, respectively.</p>
-                <h2>The $\mP_r^-\Lambda^k$ family</h2>
+                <h2 id="Pm-family">The $\mP_r^-\Lambda^k$ family</h2>
 		<p>The shape function space for $\mP_r^-\Lambda^k$ is $\mP_{r-1}\Lambda^k+\kappa\mP_{r-1}\Lambda^{k+1}$ where $\kappa$ is the Koszul differential.<sup><a href="#ref-7">7</a></sup> It includes the full polynomial space $\mP_{r-1}\Lambda^k$, is included in $\mP_r\Lambda^k$, and has dimension</p>
 		<p>$$\dim \mP_r^-\Lambda^k(\Delta_n)=\binom{r+n}{r+k}\binom{r+k-1}{k}.$$</p>
 		<p>The degrees of freedom are given on faces $f$ of dimension $d\ge k$ by moments of the trace weighted by a full polynomial space:</p>
@@ -255,21 +255,21 @@
 		    </tr>
                   </tbody>
                 </table>
-                <h2>The $\mP_r\Lambda^k$ family</h2>
+                <h2 id="P-family">The $\mP_r\Lambda^k$ family</h2>
 		<p>The shape function space for $\mP_r\Lambda^k$ consists of all differential $k$-forms with polynomial coefficients of degree at most $r$, and has dimension</p>
 		<p>$$\dim \mP_r\Lambda^k(\Delta_n)=\binom{r+n}{r+k}\binom{r+k}{k}.$$</p>
 		<p>The degrees of freedom are given on faces $f$ of dimension $d\ge k$ by moments of the trace weighted by a $\mP_r^-$ space:</p>
 		<p>$$u\mapsto \int_f (\tr_f u)\wedge q, \quad q\in\mP^-_{r+k-d}\Lambda^{d-k}(f).$$</p>
 		<p>The spaces with decreasing degree $r$ form a complex:</p>
 		<p>$$\mP_r\Lambda^0\xrightarrow{\mathrm d}\mP_{r-1}\Lambda^1\xrightarrow{\mathrm d}\cdots\xrightarrow{\mathrm d}\mP_{r-n}\Lambda^n.$$</p>
-                <h2>The $\mQ_r^-\Lambda^k$ family</h2>
+                <h2 id="Qm-family">The $\mQ_r^-\Lambda^k$ family</h2>
 		<p>This family is constructed from the complex of 1-dimensional finite elements using a tensor product construction.<sup><a href="#ref-10">10</a></sup> The shape function space on the unit cube $\square_n=I^n$ is given by</p>
 		<p>$$\mQ_r^-\Lambda^k(\square_n) = \bigoplus_{\sigma\in \Sigma(k,n)}\left[\bigotimes_{i=1}^n \mP_{r-\delta_{i,\sigma}}(I)\right]\, \mathrm{d}x^{\sigma_1}\wedge\cdots\wedge \mathrm{d}x^{\sigma_k}, $$</p>
 		<p>where $\Sigma(k,n)$ denotes the increasing maps $\{1,\ldots,k\}\to\{1,\ldots,n\}$. Its dimension is $\dim \mQ_r^-\Lambda^k(\square_n) =\binom{n}{k}r^k(r+1)^{n-k}. $ The degrees of freedom are</p>
 		<p>$$u \mapsto \int_f (\tr_f u)\wedge q, \quad q\in \mQ_{r-1}^-\Lambda^{d-k}(f).$$</p>
 		<p>The spaces with constant degree $r$ form a complex:</p>
 		<p>$$\mQ_r^-\Lambda^0 \xrightarrow{\mathrm d} \mQ_r^-\Lambda^1 \xrightarrow{\mathrm d} \cdots \xrightarrow{\mathrm d} \mQ_r^-\Lambda^n.$$</p>
-                <h2>The $\mS_r\Lambda^k$ family</h2>
+                <h2 id="S-family">The $\mS_r\Lambda^k$ family</h2>
 		<p>The shape function space for $\mS_r\Lambda^k$ is given by</p>
 		<p>$$\mP_r\Lambda^k \oplus \bigoplus_{\ell\ge 1}[\kappa\mH_{r+\ell-1,\ell}\Lambda^{k+1} \oplus \mathrm{d}\kappa\mH_{r+\ell,\ell}\Lambda^k], $$</p>
 		<p>where $\mH_{r,\ell}\Lambda^k$ consists of homogeneous polynomial $k$-forms of degree $r$ which are linear and undifferentiated in at least $\ell$ variables.<sup><a href="#ref-11">11</a></sup> Its dimension is $\dim \mS_r\Lambda^k(\square_n) = \sum_{d\ge k}  2^{n-d}\binom{n}{d} \binom{r-d+2k}{d}\binom{d}{k}.$ The degrees of freedom are</p>
