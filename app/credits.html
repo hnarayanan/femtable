@@ -40,7 +40,7 @@
         <div class="pure-menu pure-menu-open">
           <ul>
             <li><a href="/">The Table</a></li>
-            <li><a href="#">Legend</a></li>
+            <li><a href="#" data-toggle="modal" data-target="#legend">Legend</a></li>
             <li><a href="background.html">Background</a></li>
             <li><a href="images/periodic-table-of-the-finite-elements.pdf">Download</a></li>
             <li class="pure-menu-selected"><a href="credits.html">Credits</a></li>
@@ -91,6 +91,22 @@
           </div>
         </div>
       </div>
+
+      <!-- Legend detail  -->
+      <div class="modal fade" id="legend" tabindex="-1" role="dialog">
+        <div class="modal-dialog" style="width: 900px;">
+          <div class="modal-content grey">
+            <div class="modal-body">
+              <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+	      <div>
+		<img src="images/large/legend.png" class="pure-img">
+	      </div>
+	      </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
 
     <!-- build:js(.) scripts/vendor.js -->
