@@ -137,3 +137,7 @@ code {
 .code1 {
   margin-top: 0.8em;
 }
+
+.code-small {
+  font-size: 75%;
+}
