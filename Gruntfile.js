@@ -283,7 +283,7 @@ module.exports = function (grunt) {
           cwd: '<%= config.app %>',
           dest: '<%= config.dist %>',
           src: [
-            '*.{ico,png,txt}',
+            '*.{pdf,ico,png,txt}',
             'images/{,*/}*.{pdf,webp}',
             '{,*/}*.html',
             'styles/fonts/{,*/}*.*'
@@ -373,7 +373,6 @@ module.exports = function (grunt) {
     'cssmin',
     'uglify',
     'copy:dist',
-    'rev',
     'usemin',
     'htmlmin'
   ]);
